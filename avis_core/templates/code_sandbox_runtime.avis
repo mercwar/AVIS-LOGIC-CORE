@@ -1,0 +1,18 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/templates/code_sandbox_runtime.avis
+# DESCRIPTION: Bound policy specifications tracking runtime execution isolation.
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-04-CODE-SANDBOX-RUNTIME"
+    BINARY_SOURCE  = "bin/code_sandbox_runtime/sandbox_exec.so"
+    INTERFACE_BIND = "AvisIntegrationBridge$SandboxExecLib"
+
+[ISOLATION_CONSTRAINTS]
+    SYSCALL_POLICY_MAP   = "bin/code_sandbox_runtime/sandbox_policy.res"
+    MEMORY_LIMIT_BYTES   = 67108864
+    TIMEOUT_MILLISECONDS = 500
+
+[EOF]
+AVIS_MODULE_SANDBOX_LOADED
