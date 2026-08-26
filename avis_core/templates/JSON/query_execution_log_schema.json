@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://avis.core",
+  "title": "AvisQueryExecutionLogSchema",
+  "description": "Database layout schema mapping incoming inputs to their confirmed routing paths.",
+  "type": "object",
+  "properties": {
+    "log_entry_id": { "type": "string", "format": "uuid" },
+    "raw_input_captured": { "type": "string" },
+    "routing_mechanism": {
+      "type": "string",
+      "enum": ["DIRECT_DETERMINISTIC", "USER_CHOICE_MENU_RESOLVED", "FALLBACK_DEFAULT"],
+      "description": "Identifies if the tool path was guessed or explicitly chosen by the user."
+    },
+    "associated_switch_id": {
+      "type": "string",
+      "description": "If user-resolved, points back to the conversation menu item used."
+    },
+    "activated_tool_modules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of native binary app hooks executing this specific task payload."
+    }
+  },
+  "required": ["log_entry_id", "raw_input_captured", "routing_mechanism", "activated_tool_modules"]
+}
