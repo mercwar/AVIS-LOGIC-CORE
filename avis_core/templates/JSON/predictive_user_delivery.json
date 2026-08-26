@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org",
+  "template_id": "AVIS_PREDICTIVE_USER_DELIVERY_V1",
+  "description": "Structures the final proactive payload delivered to the interface layer.",
+  "response_payload": {
+    "direct_solution_output": "The optimized, factual answer compiled from verified web searches.",
+    "predictive_proactive_extensions": {
+      "predicted_next_user_action": "The likely follow-up task or verification step the user will perform next",
+      "proactive_web_resources_provided": [
+        {
+          "resource_label": "Dynamic Developer Reference Framework",
+          "direct_hyperlink": "https://example.com"
+        }
+      ],
+      "suggested_native_application_hooks": [
+        "bin/symbolic_logic_engine",
+        "bin/memory_vector_graph"
+      ]
+    },
+    "confidence_telemetry": {
+      "system_confidence_percentage": 98.4,
+      "hallucination_risk_index": "LOW"
+    }
+  }
+}
