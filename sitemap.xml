@@ -37,6 +37,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/sitemap.xml</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/recursive_refiner/path_refiner.c</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/recursive_refiner/path_refiner.h</loc>
   </url>
   <url>
