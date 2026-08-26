@@ -321,12 +321,12 @@ NIBBLE ROUTER
 ##### The architecture avoids requiring a large in-memory representation of the complete input stream.
 ###### The primary stream primitives are:
 
-**
+***
 
 - fgetc()
 - fputc()
 
-**
+***
 
 ### This allows the implementation to process input and output incrementally.
 ## Design Goals
