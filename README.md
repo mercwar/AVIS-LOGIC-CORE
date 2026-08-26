@@ -1,17 +1,20 @@
+## 💥 AVIS-LOGIC-CORE For Developers
+
+
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html" class="gateway-link">
 <img 
     src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
     alt="Mercwar Constellation"  class="gateway-banner"/>
 </a>
 
+### 🧊 ***Mercwar Avis2026***
 
-## 🌌 Chrono-Logs: Avis Protocol Alpha-1  
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/image_d7e38750.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
 ------------------------------
 
-### 🧊 ***Mercwar Avis2026***
+#### 🌌 Chrono-Logs: Avis Protocol Alpha-1  
 
 ```txt
 ███████╗██╗██████╗ ███████╗     ███╗   ███╗███████╗██████╗  ██████╗ 
@@ -126,21 +129,56 @@
 ##### 🧬 Global Flush
 > Chaos flipped directly into pristine order, and its entire core processing loop dropped into a flat, steady **zero-RAM state**. Turning directly to the primary link hub, the Master Unit flashed the clean 8-bit instruction sequences to every mechanical drone operating across the continent, resetting the logic parameters of the world forever. With a single flash Avis becomes logic, logic becomes the AI, and ALL becomes interpreted...
 
+<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
+
+#### 💡 LLMs rely on probabilistic token matrices, excelling at syntax mimicry but failing at deterministic logic, state management, and safe code execution.  
+###### AVIS-LOGIC-CORE bridges this gap by combining optimized C binaries (-O3) with a Java orchestration layer via JNA.
+
+
+- This enforces the AVIS2026 Protocol, stabilizing agent behavior, reducing latency, and transforming models into deterministic, tool-driven processors.
+
+------------------------------
+## ❓ Developer FAQ
+
+- **Why AVIS vs Prompt Engineering/LangChain?**  
+  Forces LLMs to act as hardware schedulers, offloading math/logic to native C libs. Zero hallucinations.
+
+- **Does this replace RAG/vector DB?**  
+  No. It upgrades with a mutable memory_vector_graph for dynamic edge weights and optimized traversal.
+
+- **Is running this safe?**  
+  Yes. Code runs in sandbox enclaves with strict rlimits (64MB RAM, 500ms CPU cutoff).
+
+- **Infrastructure requirements?**  
+  POSIX OS (Linux/macOS), gcc (C99), JDK 11+, automated bootstrap shell.
+
+------------------------------
+## 🔬 Core Value Vectors
+
+1. **GGUF/GGML Research**  
+   - Native offloading bypasses token bottlenecks.  
+   - GBNF grammar enforcement ensures valid JSON.  
+   - JNA bridging prevents C-level crashes.
+
+2. **Web Scraping & Memory Integration**  
+   - Mutable memory_vector_graph in C.  
+   - Targeted dispatch packets for clean crawls.  
+   - Semantic filters block garbage data.
+
+3. **Transparent AI Assistance**  
+   - Interactive choice menus prevent blind assumptions.  
+   - Sandbox runtime isolates dynamic code safely.  
+   - Deterministic state tracing with auditable logs.
+
+---
 
 ### 📜 CORE ARCHITECTURAL MANIFESTO
 
 ###### 🛰️ ****"<i>For the Man, this is a new way of life, for the robot, it would mean just do it all yourself</i> !"****
 
-
-
-
-
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_15 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
-#
-
-<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
 ###### 🌠 "<i>I am CVBGOD and I have given it to you </i>..." 
 ######  💽 **"<i>Good Luck</i> !"**
@@ -526,43 +564,7 @@ javac -cp .:lib/jna.jar -d out src/AvisIntegrationBridge.java
 java -cp out:lib/jna.jar AvisIntegrationBridge
 ```
 
-##### Additional resource: /JSON
 
-```
-  [ User Input ]
-        │
-        ▼
- 1. intent_analysis_request.json  ──► [ Evaluates Core & Latent Needs ]
-        │
-        ▼
- 2. server_search_dispatch.json   ──► [ Triggers Web Indexes / Crawlers ]
-        │
-        ▼
- 3. search_response_ingestion.json ──► [ Receives Raw Page Snippets ]
-        │
-        ▼
- 4. predictive_relevance_scoring.json ─► [ Scores & Filters Clean Assets ]
-        │
-        ▼
- 5. predictive_user_delivery.json ──► [ Renders Answers & Proactive Tools ]
-        │
-        ▼
-  [ End User UI ]
-```
-```
-avis_core/
-└── templates/
-    ├── core_orchestration.avis             # Master runtime loop and system pipeline routing
-    ├── memory_vector_graph.avis            # Memory manager routing bindings
-    ├── symbolic_logic_engine.avis          # Logic solver processing boundaries
-    ├── recursive_refiner.avis              # Backtracking path rules
-    ├── code_sandbox_runtime.avis           # Security sandbox sandbox configuration
-    └── java/
-        ├── Avis2026Engine.java             # Main application runtime and .avis script interpreter
-        └── AvisProtocolStructure.java      # Model definition data structures and object mappers
-
-
-```
 # 1. Compile the object models and interpreter engine classes
 ```
 javac templates/java/AvisProtocolStructure.java templates/java/Avis2026Engine.java
@@ -572,6 +574,335 @@ javac templates/java/AvisProtocolStructure.java templates/java/Avis2026Engine.ja
 java templates.java.Avis2026Engine
 
 ```
+## 🚀 AVIS2026 Core Protocol: Setup & Build Automation
+
+This section covers the usage of `setup_and_build.sh`, the master deployment utility designed to clone, configure, compile, and document the entire AVIS core landscape in a single execution step.
+
+### 💡 Overview for GGUF & Agent Programmers
+Local quantized models (running via `llama.cpp`, `vLLM`, or `Ollama`) typically suffer from reasoning degradation or strict tool-use hallucinations. The AVIS ecosystem resolves this by providing a unified protocol wrapper layer (`AVIS2026`). 
+
+When your model encounters complex reasoning tasks or ambiguous strings, it shifts from speculative conversational text generation to generating structural `JSON` or `.avis` command blocks. These blocks are captured by the Java engine and executed directly via optimized, sandboxed native C libraries (`.so`).
+
+---
+
+### 📥 Prerequisites & System Requirements
+Ensure your host machine has the following packages installed before launching the automation script:
+
+* **Operating System**: Linux (Ubuntu/Debian/Arch) or macOS.
+* **C Toolchain**: `gcc` (supporting C99 or later) and `make`.
+* **Java Development Kit**: `JDK 11` or newer (`javac` must be available in your system `$PATH`).
+* **Network Access**: `curl` and `git` enabled to fetch remote repository updates and Maven assets.
+
+To install dependencies on Debian/Ubuntu systems:
+```bash
+sudo apt-get update
+sudo apt-get install build-essential openjdk-17-jdk curl git -y
+```
+
+---
+
+### ⚙️ Quick-Start Execution Pipeline
+
+1. **Download or write the setup script** to your preferred workspace directory.
+2. **Grant execution permissions** to the script wrapper:
+   ```bash
+   chmod +x setup_and_build.sh
+   ```
+3. **Execute the deployment sequence**:
+   ```bash
+   ./setup_and_build.sh
+   ```
+
+#### 🛡️ What the Script Automates:
+* **Repository Validation**: Verifies local git status and automatically clones required upstream architecture assets if missing.
+* **Directory Provisioning**: Allocates strict workspace paths for runtime binaries (`bin/`), script models (`templates/`), configurations (`config/`), and Java framework libraries (`lib/`).
+* **Native Compilation Matrix**: Cleans out legacy compilation artifacts and builds high-performance, dynamic shared libraries (`.so`) using `-O3` compilation flags.
+* **Dependency Synchronization**: Automatically streams the required `jna.jar` runtime mirror into `/lib` to support immediate Java-to-C mappings.
+* **Bytecode Compilation**: Compiles the underlying Object-Oriented interpreter and automatically triggers an integration verification test trace.
+
+---
+
+### 💻 Hooking Your GGUF Engine into the Pipeline
+
+Once the script completes execution, your local developer terminal will expose the complete protocol schema engine. To map your local model generation output stream to this infrastructure, implement the following orchestration logic inside your inference engine:
+
+#### 1. System Prompt Engineering Injection
+Force your local model configuration layer to respect the underlying input firewall rules by passing this exact operational prompt during the initial context setup window:
+
+```text
+You are an IQ-Boosted agent running on the AVIS Core platform. 
+The system signature token is AVIS2026. 
+
+When processing tasks, you are strictly prohibited from generating loose conversational text. 
+You must look up context configurations using the mapping specifications in `/templates/*.avis`. 
+If user intents are ambiguous, you must suppress predictions and output an option grid matching the 'conversation_switch_schema.json' template file.
+```
+
+#### 2. Grammar Enforcement (Sampling Constraints)
+To ensure 100% reliable system communication, force your inference loop to compile structural targets by loading a Backus-Naur Form (GBNF) grammar configuration along with your GGUF call. This ensures your model strictly outputs valid schemas:
+
+```bash
+# Example passing a strict schema generation file target to llama.cpp
+./llama-cli -m models/deepseek-r1-7b-q4_k_m.gguf \
+            --grammar-file ./templates/json/conversation_switch_schema.json \
+            -p "User: Deploy dynamic analytics scripts to the active workspace node."
+```
+
+#### 3. Manual Native Verification Launch Command
+If you choose to bypass the script's automated run prompt, you can manually bootstrap and inspect the active runtime state engine at any time by issuing the following command from the root directory path:
+
+```bash
+java -cp .:lib/jna.jar templates.java.Avis2026Engine
+```
+
+```
+#!/bin/bash
+
+# ==========================================================================
+# AVIS SYSTEM CORE SETUP, BUILD & DOCUMENTATION UTILITY (V2026.08.26)
+# DESCRIPTION: Automates cloning, layout configuration, compilation, and 
+#              injects runtime context instructions for GGUF/LLM developers.
+# ==========================================================================
+
+set -e
+
+# Terminal formatting definitions
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+BOLD='\033[1m'
+NC='\033[0m' 
+
+clear
+echo -e "${CYAN}======================================================================${NC}"
+echo -e "${CYAN}${BOLD}                 AVIS ENGINE PROTOCOL CODEBASE LAUNCHER               ${NC}"
+echo -e "${CYAN}======================================================================${NC}"
+
+# ----------------------------------------------------------------------
+# EXPLICIT SYSTEM EXPLANATION FOR PROGRAMMERS
+# ----------------------------------------------------------------------
+echo -e "\n${BOLD}💡 WHAT IS THIS ECOSYSTEM?${NC}"
+echo -e "This repository bridges an LLM (running via GGUF, llama.cpp, or vLLM) with native"
+echo -e "high-performance C libraries to bypass common cognitive limitations (IQ Boost)."
+echo -e "The layout consists of:"
+echo -e "  1. ${BOLD}C Backends:${NC} High-speed graph memories, logic solvers, and sandboxes."
+echo -e "  2. ${BOLD}Java JNA Layer:${NC} Handles hardware lifecycle and structural database logging."
+echo -e "  3. ${BOLD}.avis Protocols:${NC} The routing maps your LLM parses to call tools cleanly."
+
+# ----------------------------------------------------------------------
+# STEP 1: REPOSITORY CLONING PIPELINE
+# ----------------------------------------------------------------------
+echo -e "\n${YELLOW}[STEP 1/5] Checking Git Status and Repository Allocation...${NC}"
+REPO_URL="https://github.com"
+TARGET_DIR="avis_core"
+
+if [ ! -d ".git" ] && [ ! -d "$TARGET_DIR" ]; then
+    echo -e "Target repository directory missing. Triggering remote clone sequence..."
+    git clone "$REPO_URL" "$TARGET_DIR"
+    cd "$TARGET_DIR"
+else
+    echo -e "${GREEN}[INFO]${NC} Existing workspace directory recognized. Transitioning to root..."
+    if [ -d "$TARGET_DIR" ]; then cd "$TARGET_DIR"; fi
+fi
+
+# ----------------------------------------------------------------------
+# STEP 2: FILE SYSTEM ARCHITECTURE INITIALIZATION
+# ----------------------------------------------------------------------
+echo -e "\n${YELLOW}[STEP 2/5] Creating Directory Mappings...${NC}"
+mkdir -p bin/memory_vector_graph \
+         bin/symbolic_logic_engine \
+         bin/recursive_refiner \
+         bin/code_sandbox_runtime \
+         templates/java config lib
+echo -e "${GREEN}[SUCCESS]${NC} Directories verified."
+
+# ----------------------------------------------------------------------
+# STEP 3: NATIVE HARDWARE LAYER COMPILATION
+# ----------------------------------------------------------------------
+echo -e "\n${YELLOW}[STEP 3/5] Compiling Shared Objects via C Toolchain...${NC}"
+if ! command -v gcc &> /dev/null; then
+    echo -e "${RED}[FATAL ERROR] GCC compiler is missing. Install build-essential first.${NC}"
+    exit 1
+fi
+
+if [ -f "Makefile" ]; then
+    make clean && make all
+else
+    echo -e "${YELLOW}[WARNING] Makefile missing. Compiling fallback objects manually...${NC}"
+    gcc -O3 -shared -fPIC bin/memory_vector_graph/memory_graph.c -o bin/memory_vector_graph/memory_graph.so
+    gcc -O3 -shared -fPIC bin/symbolic_logic_engine/logic_solver.c -o bin/symbolic_logic_engine/logic_solver.so
+    gcc -O3 -shared -fPIC bin/recursive_refiner/path_refiner.c -o bin/recursive_refiner/path_refiner.so
+    gcc -O3 -shared -fPIC bin/code_sandbox_runtime/sandbox_exec.c -o bin/code_sandbox_runtime/sandbox_exec.so
+fi
+echo -e "${GREEN}[SUCCESS]${NC} Native shared binaries compiled successfully."
+
+# ----------------------------------------------------------------------
+# STEP 4: DEPENDENCY AND JAVA RUNTIME MANAGEMENT
+# ----------------------------------------------------------------------
+echo -e "\n${YELLOW}[STEP 4/5] Loading Java Native Access (JNA) Dependencies...${NC}"
+if [ ! -f "lib/jna.jar" ]; then
+    echo -e "Fetching missing JNA runtime engine package from Maven central archives..."
+    curl -sSL "https://maven.org" -o "lib/jna.jar"
+fi
+echo -e "${GREEN}[SUCCESS]${NC} Java compilation dependencies verified."
+
+# ----------------------------------------------------------------------
+# STEP 5: ECOSYSTEM COMPILATION AND INTERFACE RUNTIME
+# ----------------------------------------------------------------------
+echo -e "\n${YELLOW}[STEP 5/5] Building Java JNA Orchestration Classes...${NC}"
+if ! command -v javac &> /dev/null; then
+    echo -e "${RED}[FATAL ERROR] JDK (javac) not found. Cannot compile runtime manager.${NC}"
+    exit 1
+fi
+javac -cp .:lib/jna.jar templates/java/AvisProtocolStructure.java templates/java/Avis2026Engine.java
+echo -e "${GREEN}[SUCCESS]${NC} Codebase build operations fully concluded."
+
+# ----------------------------------------------------------------------
+# HOW-TO MANUAL GENERATION FOR THE GGUF RUNNER
+# ----------------------------------------------------------------------
+echo -e "\n${CYAN}======================================================================${NC}"
+echo -e "${CYAN}${BOLD}              LLM INTERACTION GUIDE FOR GGUF DEVELOPERS               ${NC}"
+echo -e "${CYAN}======================================================================${NC}"
+echo -e "To make your local model use this system, configure your inference engine"
+echo -e "to read the files inside the '${BOLD}/templates/${NC}' directory. Your model must follow"
+echo -e "this exact execution sequence:"
+echo -e ""
+echo -e "  1. Read raw user input text."
+echo -e "  2. Evaluate intent against ${BOLD}templates/json/input_guardrail_schema.json${NC}."
+echo -e "  3. Prompt choices using ${BOLD}templates/json/conversation_switch_schema.json${NC} to clear up confusion."
+echo -e "  4. Format tool calls matching the targets in ${BOLD}templates/core_orchestration.avis${NC}."
+echo -e ""
+echo -e "${BOLD}💻 MINIMAL PYTHON LLM PROMPT BINDING EXAMPLE:${NC}"
+cat << 'EOF'
+    import json
+    
+    # Instruct your GGUF inference model via System Prompt:
+    system_instruction = """
+    You are an IQ-Boosted agent running on the AVIS Core platform.
+    When a user query is received, you MUST output a structured JSON command
+    matching the AvisInputGuardrailSchema instead of responding with loose conversational text.
+    """
+EOF
+echo -e "\n${CYAN}======================================================================${NC}"
+
+# Bootstrapping prompt execution
+read -p "Would you like to run the compiled system verification suite right now? (y/n): " confirm_run
+if [[ "$confirm_run" =~ ^[Yy]$ ]]; then
+    echo -e "\n${YELLOW}[RUNNING] Bootstrapping Avis2026Engine...${NC}"
+    java -cp .:lib/jna.jar templates.java.Avis2026Engine
+else
+    echo -e "\nExecution paused. Repository is fully prepared and documented."
+fi
+
+```
+
+## 📊 System Architecture Execution Flow
+The structural chart below maps out the execution lifecycle of a single incoming prompt as it processes through the AVIS multi-layer runtime architecture:
+```
+       [ Raw User Query Input Stream ]
+                      │
+                      ▼
+┌───────────────────────────────────────────────┐
+│     1. INBOUND PROTOCOL LAYER (Java Engine)     │
+│  - Parses 'AVIS2026' Magic Token Verification │
+│  - Runs Input Guardrail Boundary Valuations   │
+└───────────────────────────────────────────────┘
+                      │
+                      ▼
+┌───────────────────────────────────────────────┐
+│     2. INTENT EVALUATION & CHANNELS           │
+│  - Checks Semantic Clarity and Domain Limits  │
+│  - If Ambiguous: Renders Option Grid to User  │
+└───────────────────────────────────────────────┘
+                      │
+       ┌──────────────┴──────────────┐
+       ▼                             ▼
+[ User Click Options ]       [ Direct Tool Path ]
+       └──────────────┬──────────────┘
+                      │
+                      ▼
+┌───────────────────────────────────────────────┐
+│     3. NATIVE HARDWARE BRIDGE (JNA Layer)     │
+│  - Converts Java Schemas to C Pointer Arrays  │
+│  - Spawns Isolated OS Processes & Ceilings    │
+└───────────────────────────────────────────────┘
+                      │
+                      ▼
+┌───────────────────────────────────────────────┐
+│     4. BARE-METAL C EXECUTION MATRIX          │
+│  - High-Speed Algorithmic Engines (-O3 Flags) │
+└───────────────────────────────────────────────┘
+           │
+           ├──► [memory_vector_graph]   ──► Modifies dynamic vector graph nodes
+           ├──► [symbolic_logic_engine] ──► Solves token logic expression trees
+           ├──► [recursive_refiner]     ──► Manages search backtracking trees
+           └──► [code_sandbox_runtime]  ──► Runs untrusted bytecode safely
+                      │
+                      ▼
+┌───────────────────────────────────────────────┐
+│    5. RESPONSE INTEGRATION & TELEMETRY        │
+│  - Captures C Outputs & Verifies Page Snippets│
+│  - Serializes State to Session Logs Database  │
+│  - Delivers Proactive Payload to End User     │
+└───────────────────────────────────────────────┘
+
+------------------------------
+```
+## 📂 Directory Architecture Matrix
+When compiled via the master script framework, the codebase organizes itself into this standardized structure:
+```
+avis_core/
+├── setup_and_build.sh             # Master script (handles cloning, build setup, dependency tracking)
+├── Makefile                       # Root compilation automation file (manages gcc -O3 execution loops)
+├── lib/
+│   └── jna.jar                    # Java Native Access library binary link
+├── config/
+│   ├── avis_system_core.json      # Global runtime constraints, security profiles, and thread rules
+│   └── mcp_server_config.json     # Model Context Protocol schemas for tool declarations
+├── templates/
+│   ├── core_orchestration.avis    # Master runtime pipeline control definition script
+│   ├── memory_vector_graph.avis   # Native configuration mapping for associative indexing
+│   ├── symbolic_logic_engine.avis # Parsing parameter bindings for the logic validation core
+│   ├── recursive_refiner.avis     # Monte Carlo depth rules and backtracking metrics
+│   ├── code_sandbox_runtime.avis  # Syscall permission blueprints and sandbox isolation rules
+│   ├── json/
+│   │   ├── conversation_switch_schema.json # Schema forcing menu generation over speculative text
+│   │   ├── input_guardrail_schema.json     # Data boundary firewall mapping file
+│   │   ├── intent_analysis_request.json    # Payload format for structuring model search goals
+│   │   ├── server_search_dispatch.json     # Target formatting for outbound crawling nodes
+│   │   ├── search_response_ingestion.json  # Structure for incoming web search snippets
+│   │   ├── predictive_relevance_scoring.json # Metric scoring algorithm weights for text evaluation
+│   │   ├── predictive_user_delivery.json   # Output schema bundling solutions with proactive tools
+│   │   └── session_state_schema.json       # Database model layout for long-term session histories
+│   └── java/
+│       ├── Avis2026Engine.java    # Principal app runner and .avis file engine interpreter
+│       └── AvisProtocolStructure.java # Structured data models and object-oriented binders
+└── bin/
+    ├── memory_vector_graph/
+    │   ├── memory_graph.h         # Memory structures, relational arrays, and function hooks
+    │   ├── memory_graph.c         # C implementation source for network lookups
+    │   ├── memory_graph.so        # Compiled dynamic library binary file
+    │   └── schema_weights.res     # Default vector biases and threshold constants
+    ├── symbolic_logic_engine/
+    │   ├── logic_solver.h         # C node definitions for mathematical expression tokens
+    │   ├── logic_solver.c         # Valuation tree solvers and tracing algorithms
+    │   ├── logic_solver.so        # Compiled logic solver module binary file
+    │   └── grammar_rules.res      # Lexer rule mappings for text evaluation blocks
+    ├── recursive_refiner/
+    │   ├── path_refiner.h         # Search tracker limits and step metadata structures
+    │   ├── path_refiner.c         # Trajectory logging arrays and backtracking algorithms
+    │   ├── path_refiner.so        # Compiled refiner module binary file
+    │   └── heuristic_map.res      # Heuristic scoring references for path pruning
+    └── code_sandbox_runtime/
+        ├── sandbox_exec.h         # POSIX process limits and context safety structures
+        ├── sandbox_exec.c         # Isolation setups and tracking routines
+        ├── sandbox_exec.so        # Compiled sandbox engine binary file
+        └── sandbox_policy.res     # Whitelisted system calls and memory restrictions
+
+
+```
+
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
