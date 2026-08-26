@@ -1,4 +1,4 @@
-# 🌐 AVIS-LOGIC-CORE Ecosystem Core for Developers
+# 🌐 AVIS-LOGIC-CORE Loadable Ecosystem BIOS for Developers
 
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html" class="gateway-link">
