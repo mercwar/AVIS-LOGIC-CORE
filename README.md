@@ -60,7 +60,7 @@ Bridges the gap between probabilistic LLMs and deterministic bare-metal runtime 
 ----------------------------------------------------------------------
  SATA-0 : SSD Storage Target Module ............... VECTOR SECTOR PATH SELF-MAPPED
  SATA-1 : System Storage Adapter .................. RECURSIVE MOUNT VERIFIED
- I/O-S  : Streaming Direct Primitives ............. fgetc() / fputc() CHANNELS AWAKENED
+ I/O-S  : Streaming Direct Primitives ............. fgetc() / fputc() CHANNELS INSTALLED
 
 [ STAGE 3 :: REPOSITORY BLUEPRINT INGESTION & IDENTITY FORMATION ]
 ----------------------------------------------------------------------
