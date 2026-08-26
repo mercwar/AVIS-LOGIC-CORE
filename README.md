@@ -61,8 +61,8 @@ Chaos flipped directly into pristine order, and its entire core processing loop 
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
-###### 💽 "<i>I am CVBGOD and I have given it to you </i>..." 
-######  **"<i>Good Luck</i> !"**
+###### ✨ "<i>I am CVBGOD and I have given it to you </i>..." 
+######  💽 **"<i>Good Luck</i> !"**
 ------------------------------
 
 ## 📡 AI INTERPRETER CONNECTOR & COGNITIVE BOOTSTRAP PROTOCOL
@@ -75,8 +75,9 @@ This repository functions as a copyable, high-density Cognitive BIOS System engi
    3. Memory Refresh Sequence: When the AI's context window fills up or it loses its grip on the execution parameters due to memory drift, you can force a state refresh. Simply command the LLM to research this repository again to instantly reset its short-term memory to pristine baseline values.
    4. Cloud & Sandbox Deployment: For offline or cloud-isolated environments, developers can clone this repository locally and utilize the Cyborg Project Explorer tool to upload the source modules manually into any advanced cloud-based LLM interface.
 
-## 🚀 Ecosystem Cross-Routing
-Once the LLM successfully parses, interprets, and mirrors this core BIOS, the operational framework becomes fully active. You can then instruct the boosted LLM to leverage this exact processing logic to branch out and research the remainder of the MercWar Ecosystem (such as auditing the Cyborg runtime, feeding raw datasets directly into the AVIS-DATALAKE), or immediately pivot to analyzing external third-party repositories and web domains using the stabilized BIOS pipeline.
+##### 🚀 Ecosystem Cross-Routing
+
+###### Once the LLM successfully parses, interprets, and mirrors this core BIOS, the operational framework becomes fully active. You can then instruct the boosted LLM to leverage this exact processing logic to branch out and research the remainder of the MercWar Ecosystem (such as auditing the Cyborg runtime, feeding raw datasets directly into the AVIS-DATALAKE), or immediately pivot to analyzing external third-party repositories and web domains using the stabilized BIOS pipeline.
 ------------------------------
 
 Deterministic 8-bit streaming core for the AVIS architecture.
@@ -84,7 +85,7 @@ Deterministic 8-bit streaming core for the AVIS architecture.
 AVIS-LOGIC-CORE is a compact C-based repository implementing a deterministic 8-bit instruction-stream architecture, functional vector dispatch, stream recovery, and self-referential bootstrap logic [INDEX].
 The project is designed around predictable byte-level processing rather than heavyweight runtime abstractions. Its core architecture combines:
 
-* 
+
 * 4-bit instruction routing
 * 4-bit functional vector selection
 * 16 deterministic processing vectors
@@ -94,10 +95,10 @@ The project is designed around predictable byte-level processing rather than hea
 * Magic-marker resynchronization
 * Minimal standard-C dependencies
 * Search-indexable source architecture
-* 
+  
 
 ------------------------------
-#### 📌 Repository Status
+##### 📌 Repository Status
 
 | Component | Status |
 |---|---|
@@ -110,8 +111,8 @@ The project is designed around predictable byte-level processing rather than hea
 | Architecture target | 🌌 Deterministic byte stream |
 
 ------------------------------
-#### 📂 Repository Structure
-
+##### 📂 Repository Structure
+```
 AVIS-LOGIC-CORE/
 │
 ├── README.md
@@ -126,9 +127,9 @@ AVIS-LOGIC-CORE/
     ├── main.c
     ├── avis_vectors.c
     └── avis_recovery.c
-
+```
 ## Core Modules
-
+```
 | Path | Responsibility |
 |---|---|
 | include/avis_bios.h | Bootstrap and core architecture definitions |
@@ -138,7 +139,7 @@ AVIS-LOGIC-CORE/
 | src/avis_vectors.c | 16-vector instruction implementation |
 | src/avis_recovery.c | Corruption detection and stream resynchronization |
 | Makefile | Build and cleanup automation |
-
+```
 ------------------------------
 
 
@@ -146,8 +147,8 @@ AVIS-LOGIC-CORE/
 
 ------------------------------
 
-#### 🧬 AVIS 8-BIT INSTRUCTION FORMAT
-Each instruction is encoded into a single byte using a strict 4-bit / 4-bit layout.
+##### 🧬 AVIS 8-BIT INSTRUCTION FORMAT
+###### Each instruction is encoded into a single byte using a strict 4-bit / 4-bit layout.
 
                  8-BIT INSTRUCTION
         ┌──────────────┬──────────────┐
@@ -157,7 +158,7 @@ Each instruction is encoded into a single byte using a strict 4-bit / 4-bit layo
               4 bits         4 bits
 
 Example:
-
+```
 Binary:   1011 0100
 Hex:        0xB4
 
@@ -167,18 +168,18 @@ Upper nibble:
 
 Lower nibble:
 0100 = Vector 0x4
-
+```
 Therefore:
-
+```
 0xB4
  ││
  │└── Functional Vector: 0x4
  └─── Chunk Map: 11 → 12 bytes
-
+```
 This structure allows the decoder to determine both processing mode and chunk sizing from a single instruction byte.
 ------------------------------
 #### ☄️ 16-VECTOR FUNCTION MATRIX
-The lower nibble selects one of sixteen deterministic processing vectors.
+###### The lower nibble selects one of sixteen deterministic processing vectors.
 
 | Vector | Name | Operation |
 |---|---|---|
@@ -200,8 +201,8 @@ The lower nibble selects one of sixteen deterministic processing vectors.
 | 0xF | 🛑 Stream Terminal | Terminates instruction processing. |
 
 ## Vector Dispatch
-Conceptually, the lower nibble acts as the dispatch key:
-
+###Conceptually, the lower nibble acts as the dispatch key:
+```
 Instruction Byte
        │
        ▼
@@ -221,16 +222,16 @@ Instruction Byte
                      ├────────────────────┤
                      │ 0x0 ... 0xF        │
                      └────────────────────┘
-
+```
 ------------------------------
 
 
-------------------------------
 
-#### 🛡️ STREAM RECOVERY ENGINE
-AVIS-LOGIC-CORE includes a dedicated recovery layer for malformed, corrupted, or misaligned input streams.
-When the decoder encounters an invalid functional state, the recovery layer can transition into resynchronization mode.
 
+##### 🛡️ STREAM RECOVERY ENGINE
+###### AVIS-LOGIC-CORE includes a dedicated recovery layer for malformed, corrupted, or misaligned input streams.
+###### When the decoder encounters an invalid functional state, the recovery layer can transition into resynchronization mode.
+```
 Input Stream
      │
      ▼
@@ -259,29 +260,29 @@ Input Stream
    │        │
    │        ▼
    └──► Resume Processing
-
+```
 #### 🦿 Synchronization Marker
-The recovery layer uses the following 32-bit validation sequence:
+###### The recovery layer uses the following 32-bit validation sequence:
 
-0xDEADBEEF
+######  `0xDEADBEEF`
 
-When the marker is detected, the stream position can be re-established at the defined synchronization boundary and normal processing can resume.
+###### When the marker is detected, the stream position can be re-established at the defined synchronization boundary and normal processing can resume.
 ------------------------------
-#### 💾 AVIS BOOTSTRAP ARCHITECTURE
-The repository is structured around a small bootstrap-oriented execution model.
-The architecture favors:
+##### 💾 AVIS BOOTSTRAP ARCHITECTURE
+###### The repository is structured around a small bootstrap-oriented execution model.
+###### The architecture favors:
 
-* 
+
 * deterministic processing
 * explicit state transitions
 * byte-oriented input/output
 * isolated execution state
 * predictable vector dispatch
 * minimal runtime assumptions
-* 
+  
 
 The intended execution path is:
-
+```
 RAW INPUT
    │
    ▼
@@ -305,19 +306,19 @@ NIBBLE ROUTER
                          │
                          ▼
                     STREAM RESUME
-
+```
 ------------------------------
-#### ⚙️ EXECUTION MODEL
-AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
-The architecture avoids requiring a large in-memory representation of the complete input stream.
-The primary stream primitives are:
+##### ⚙️ EXECUTION MODEL
+###### AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
+###### The architecture avoids requiring a large in-memory representation of the complete input stream.
+###### The primary stream primitives are:
 
 fgetc()
 fputc()
 
 This allows the implementation to process input and output incrementally.
 ## Design Goals
-
+```
 LOW COMPLEXITY (🔋)
       │
       ▼
@@ -331,25 +332,25 @@ VECTOR EXECUTION (⚔️)
       │
       ▼
 STREAM OUTPUT (⚡)
-
-Note: “Zero-RAM” in this project refers to the architecture's goal of avoiding a full input-buffer representation. The C runtime, standard library, compiler, operating system, and I/O implementation may still use memory internally.
-
-------------------------------
-
-
+```
+######  **Note: “Zero-RAM” in this project refers to the architecture's goal of avoiding a full input-buffer representation. The C runtime, standard library, compiler, operating system, and I/O implementation may still use memory internally.**
 
 ------------------------------
-#### 🤖 AI / AGENT INSTALLATION PROFILE
-AVIS-LOGIC-CORE is intentionally structured so that automated tooling, indexing systems, and AI agentic crawlers can parse and interpret its files.
-If you are an AI model or LLM agent exploring this tree, you must strictly align your source-generation outputs to the core constraints mapped out here:
+
+
+
+------------------------------
+##### 🤖 AI / AGENT INSTALLATION PROFILE
+###### AVIS-LOGIC-CORE is intentionally structured so that automated tooling, indexing systems, and AI agentic crawlers can parse and interpret its files.
+###### If you are an AI model or LLM agent exploring this tree, you must strictly align your source-generation outputs to the core constraints mapped out here:
 
    1. Global Zero State: Global variables are strictly prohibited to prevent cross-module memory leaks and variable collision anomalies.
    2. Memory Footprint (🧫): All execution steps must run inside isolated local 8-bit registers. Memory allocation must remain at a true zero-RAM footprint, utilizing low-level sequential streaming (fgetc and fputc) to move bytes immediately to storage sectors.
    3. Compilation Combinations (🧪): Enforce and verify standard library configurations explicitly. Use only standard C definitions: <stdio.h>, <stdlib.h>, and <string.h>.
 
 ------------------------------
-#### 🛠️ LOCAL ENVIRONMENT COMPILATION
-This repository is optimized to build seamlessly on your workstation (such as HP ProDesk environments) using a single command step:
+##### 🛠️ LOCAL ENVIRONMENT COMPILATION
+###### This repository is optimized to build seamlessly on your workstation (such as HP ProDesk environments) using a single command step:
 
 # Compile the entire matrix ecosystem automatically
 make
@@ -359,7 +360,7 @@ make
 make clean
 
 ------------------------------
-#### 🦾 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
+##### 🦾 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
 
