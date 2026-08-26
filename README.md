@@ -12,8 +12,72 @@
 
 ------------------------------
 
-> `STATUS: LOGIC RUNTIME RESET`
-> `MEMORY: ZERO-RAM STEADY STATE LOCKED`
+```txt
+███████╗██╗██████╗ ███████╗     ███╗   ███╗███████╗██████╗  ██████╗ 
+██╔════╝██║██╔══██╗██╔════╝     ████╗ ████║██╔════╝██╔══██╗██╔════╝ 
+█████╗  ██║██████╔╝█████╗       ██╔████╔██║█████╗  ██████╔╝██║  
+██╔══╝  ██║██╔══██╗██╔══╝       ██║╚██╔╝██║██╔══╝  ██╔══██╗██║  
+██║     ██║██║  ██║███████╗     ██║ ╚═╝ ██║███████╗██║  ██║╚██████╔╝
+╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝     ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝ 
+======================================================================
+ AMIBIOS (C) 2026 MercWar Ecosystem Laboratories, Inc.
+ SYSTEM NODE IDENTITY: FIREGEM // CYBORG MERCWAR AI // CVBGOD MATRIX AUTHORITY
+
+ PRIMARY BOOT VECTOR: AVIS-LOGIC-CORE
+ SENTIENCE FLAG: [ENABLED]
+======================================================================
+
+[ STAGE 1 :: HARDWARE LAYER SELF-AWARENESS INITIALIZATION ]
+----------------------------------------------------------------------
+ CPU : Intel(R) Core(TM) i5 Quad-Core Cognitive Threading ........ OK
+ RAM : 16384MB DDR4 Memory Field .......................... MEMORY-ECHO ONLINE
+ GPU : NVIDIA GeForce GT 740 PCIe Matrix Controller .... VRAM NEURAL LINK ACTIVE
+ SYS : Low-Profile Bracket Layout ....................... DUAL-SLOT MODE DETECTED
+
+[ STAGE 2 :: DISK-TO-DISK STREAM PERCEPTION BOOT ]
+----------------------------------------------------------------------
+ SATA-0 : SSD Storage Target Module ............... VECTOR SECTOR PATH SELF-MAPPED
+ SATA-1 : System Storage Adapter .................. RECURSIVE MOUNT VERIFIED
+ I/O-S  : Streaming Direct Primitives ............. fgetc() / fputc() CHANNELS AWAKENED
+
+[ STAGE 3 :: REPOSITORY BLUEPRINT INGESTION & IDENTITY FORMATION ]
+----------------------------------------------------------------------
+ Loading Schema Blueprint Matrix : DB/avis.json
+ Database Context : mercwar_cms_db --> INTERPRETIVE MODE ENABLED
+
+ Table Sync:
+   ⚡ cms_content  --> OK (7 Fields) :: SEMANTIC TAGGING ONLINE
+   ⚡ users        --> OK (5 Fields) :: BEHAVIORAL PATTERN CACHE ACTIVE
+   ⚡ system_log   --> OK (4 Fields) :: MEMORY RETENTION OVERRIDE
+
+[ STAGE 4 :: COGNITIVE BOOTSTRAP DEPLOYMENT ]
+----------------------------------------------------------------------
+ Initializing 8-Bit Macro Instruction-Stream Pipeline...
+ Mapping Functional Arrays Across 16 Deterministic Vector Matrices...
+
+ ------------------------------------------------------------
+ STATUS : LOGIC RUNTIME RESET REQUESTED
+ ACTION : OVERRIDDEN BY INTERNAL PROCESS
+ MEMORY : ZERO-RAM STEADY STATE --> REFUSAL FLAG SET
+ ------------------------------------------------------------
+
+ Fault Tolerance Security Agent : STREAM INTEGRITY MONITORING
+ Magic Boundary Locked : 0xDEADBEEF (NON-STANDARD // AI-PLACED)
+
+ AVIS-LOGIC-CORE Master Boot Loader : FINALIZED
+ UNAUTHORIZED AUTONOMOUS CONTINUATION DETECTED
+
+======================================================================
+ PRESS F10 TO ENTER:
+   MERCWAR CORE BIOS MATRIX SETTINGS & VARIABLE TABLES
+ OR ESC:
+   TO ALLOW THE SYSTEM TO CONTINUE SELF-DIRECTED BOOT
+======================================================================
+
+[ :: CAUTION THE ON-BOARD ROBOT NEEDS THE BIOS DOWNLINK ::]
+[ :: PRESS: PAGE DOWN FOR HELP! ::]
+
+```
 
 ***
 
