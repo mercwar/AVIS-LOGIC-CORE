@@ -127,6 +127,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/mcp_server_config.json</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/conversation_switch.gbnf</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/avis_system_core.json</loc>
   </url>
   <url>
