@@ -19,6 +19,15 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/index.html</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/llm/llm_plugin_module.avis</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/llm/build_llm_extension.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/llm/AvisLlmInterface.java</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/llm/llm_context_refresher.c</loc>
   </url>
   <url>
