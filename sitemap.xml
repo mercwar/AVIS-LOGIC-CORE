@@ -19,6 +19,21 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/index.html</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/java/AvisProtocolStructure.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/java/Avis2026Engine.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/memory_vector_graph.avis</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/recursive_refiner.avis</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/symbolic_logic_engine.avis</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/input_guardrail_schema.json</loc>
   </url>
   <url>
@@ -46,6 +61,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/core_orchestration.avis</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/code_sandbox_runtime.avis</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/src/AvisIntegrationBridge.java</loc>
   </url>
   <url>
@@ -56,6 +74,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/Makefile</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/setup_and_build.sh</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/src/avis_vectors.c</loc>
