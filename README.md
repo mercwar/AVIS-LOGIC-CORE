@@ -548,33 +548,34 @@ preserving source text blocks, configurations, and `.res` tracking files.
 ---
 
 ### 📊 `make status`
-Spits out an organized checklist summary mapping out exactly  
+#####
+Produces out an organized checklist summary mapping out exactly  
 what code payloads have successfully linked in your file system.
 
 
 
-# 1. Compile the Java Source Bridge using JNA path tracking
+##### 1. Compile the Java Source Bridge using JNA path tracking
 
 ```
 javac -cp .:lib/jna.jar -d out src/AvisIntegrationBridge.java
 ```
 
-# 2. Execute the verified integration suite classes
+##### 2. Execute the verified integration suite classes
 ```
 java -cp out:lib/jna.jar AvisIntegrationBridge
 ```
 
 
-# 1. Compile the object models and interpreter engine classes
+##### 1. Compile the object models and interpreter engine classes
 ```
 javac templates/java/AvisProtocolStructure.java templates/java/Avis2026Engine.java
 ```
-# 2. Execute the engine wrapper layer tracking the .avis config registers
+##### 2. Execute the engine wrapper layer tracking the .avis config registers
 ```
 java templates.java.Avis2026Engine
 
 ```
-## 🚀 AVIS2026 Core Protocol: Setup & Build Automation
+#### 🚀 AVIS2026 Core Protocol: Setup & Build Automation
 
 This section covers the usage of `setup_and_build.sh`, the master deployment utility designed to clone, configure, compile, and document the entire AVIS core landscape in a single execution step.
 
@@ -797,6 +798,91 @@ fi
 
 ```
 
+## 💥 Cross-Compilation Architecture for Quantized Runtimes (/LM, /gguf, /ggml, /llma, /llm)
+
+This directory matrix provides modular, high-utility computing kernels tailored directly for autonomous model development pipelines and local quantization infrastructures (such as `llama.cpp`, `vLLM`, or custom inference clusters). 
+
+### 💡 The Core Objective: Quantized IQ-Boosting
+Standard models are strictly limited by probabilistic token generation thresholds. When executing intensive mathematical functions, multi-path logic validation, or vector similarity operations, they encounter strict context window decay and performance drift. 
+
+This multi-runtime layer transforms how an LLM handles code execution. Instead of guessing syntax or mimicking logic loops, an autonomous model assistant can clone this repository, run targeted cross-compilation passes, and output structured binary layers (`.so`) that hook back into your file architectures. This pipeline gives **CVBGOD** a native, bare-metal path to optimize local model execution loops.
+
+---
+
+### 🗂️ Staging Architecture Matrix
+
+The execution assets are strictly distributed across independent execution lanes, ensuring isolation during development:
+
+```text
+avis_core/
+├── LM/                             # Global language model metadata lane
+│   ├── lm_engine_core.c            # Native abstract parameter allocation tracker
+│   └── setup_lm.sh                 # Master cross-compilation shell runner script
+│
+├── gguf/                           # GGUF Dictionary Ingestion Lane
+│   ├── gguf_metadata_injector.c    # Writes tracking indicators directly to GGUF key-value blocks
+│   ├── AvisGgufInterface.java      # Java JNA variable mapping interface
+│   ├── gguf_plugin_module.avis     # Declarative AVIS system setup map
+│   └── build_gguf_extension.sh     # Targeted -O3 compilation script
+│
+├── ggml/                           # GGML Layer Optimization Lane
+│   ├── ggml_tensor_optimizer.c     # Native C matrix-multiplication acceleration enclaves
+│   ├── AvisGgmlInterface.java      # JNA layer structure tracker mapping file
+│   ├── ggml_plugin_module.avis     # Logic gate rule validation definitions
+│   └── build_ggml_extension.sh     # Automated tensor compiler runner script
+│
+├── llma/                           # Trajectory Path Routing Lane
+│   ├── llma_path_validator.c       # C path checking matrix tracking token grammar rules
+│   ├── AvisLlmaInterface.java      # Java native mapping interface bridge
+│   ├── llma_plugin_module.avis     # Execution sequence routing configuration map
+│   └── build_llma_extension.sh     # Strategy routing compilation automation script
+│
+└── llm/                            # Context Layer Injection Lane
+    ├── llm_context_refresher.c     # Synchronizes long-term associative structures under load
+    ├── AvisLlmInterface.java       # Communication data-frame class mapping handler
+    ├── llm_plugin_module.avis      # Context memory limit optimization parameters
+    └── build_llm_extension.sh      # Script automating context cache compilation
+```
+
+---
+
+### ⚙️ Automated Integration & Cross-Compilation
+
+To allow an autonomous LLM coder assistant or shell toolchain to systematically build all five targeted target architectures in a single execution step, run the core pipeline tracker:
+
+```bash
+# 1. Step into the global parameter tracking path
+cd LM
+
+# 2. Elevate access rights to make the master script executable
+chmod +x setup_lm.sh
+
+# 3. Boot the multi-format pipeline build sequence
+./setup_lm.sh
+```
+
+#### 🛠️ What Happens Under the Hood:
+1. **Global Registry Audit**: The master engine verifies process paths and kicks off individual sub-directory builders (`build_*.sh`).
+2. **Optimized Object Compilation**: Every C component is built using advanced compiler configurations (`-O3 -shared -fPIC`) to deliver clean, thread-safe binary object libraries (`.so`).
+3. **JNA Interfacing**: Java classes match the low-level byte structures of the C code, mapping variable types perfectly across environments.
+4. **AVIS Profile Injection**: The `.avis` blueprints register your custom libraries directly into the main `Avis2026Engine` memory layout.
+
+---
+
+### 🤖 LLM Workflow Instruction Blueprint
+
+To train your local GGUF agent to scan this repository and build upgraded configurations, feed this instruction payload directly to its input channel:
+
+```text
+AVIS2026_AGENT_INSTRUCTION_SET:
+1. Clone the target workspace repository into your local processing environment.
+2. Read the configuration profiles found in `config/mcp_server_config.json`.
+3. Scan the `.c` implementation files across `/LM`, `/gguf`, `/ggml`, `/llma`, and `/llm`.
+4. Run the `./LM/setup_lm.sh` master compilation loop to build optimized shared object binaries.
+5. Ingest the final `llm_context_refresh_payload.json` file to apply the fresh repository code to your own internal model files.
+```
+
+
 ## 📊 System Architecture Execution Flow
 The structural chart below maps out the execution lifecycle of a single incoming prompt as it processes through the AVIS multi-layer runtime architecture:
 ```
@@ -924,6 +1010,14 @@ avis_core/
     ├── AvisLlmInterface.java     # Structural communication bridge mapping class
     ├── llm_plugin_module.avis    # Context-window constraint blueprint profiles
     └── build_llm_extension.sh    # Script automating build variables under load
+
+avis_core/
+└── MercwarAI/
+    ├── mercwar_ai_bridge.h       # Unified interface header with strict JNA/C padding alignments
+    ├── mercwar_ai_bridge.cpp     # High-performance C++ engine binding tracking GGUF context streams
+    ├── AvisModelBridge.java      # Java Native Access container class running pipeline orchestrations
+    ├── mercwar_ai_plugin.avis    # Declarative framework mapping specification for the core loader
+    └── bootstrap_interface.sh    # Automated optimization shell compilation and execution loop script
 
 ```
 
