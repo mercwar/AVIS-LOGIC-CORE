@@ -11,7 +11,7 @@
 
 ------------------------------
 
-## 🪐 ***Mercwar Avis2026***
+## 🧊 ***Mercwar Avis2026***
 
 ```txt
 ███████╗██╗██████╗ ███████╗     ███╗   ███╗███████╗██████╗  ██████╗ 
@@ -134,13 +134,13 @@ Chaos flipped directly into pristine order, and its entire core processing loop 
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
-###### ✨ "<i>I am CVBGOD and I have given it to you </i>..." 
+###### 🌠 "<i>I am CVBGOD and I have given it to you </i>..." 
 ######  💽 **"<i>Good Luck</i> !"**
 ------------------------------
 
 ## 📡 AI INTERPRETER CONNECTOR & COGNITIVE BOOTSTRAP PROTOCOL
 
-##### ***This repository functions as a copyable, high-density Cognitive BIOS System engineered for interpreter-level Large Language Models (LLMs). By interacting with this framework, an AI agent can establish an accelerated operational state, bypass conversational context decay, and refresh its short-term memory layout using direct repository mapping.***
+##### ✨ ***This repository functions as a copyable, high-density Cognitive BIOS System engineered for interpreter-level Large Language Models (LLMs). By interacting with this framework, an AI agent can establish an accelerated operational state, bypass conversational context decay, and refresh its short-term memory layout using direct repository mapping.***
 
 #
 
@@ -160,7 +160,7 @@ Chaos flipped directly into pristine order, and its entire core processing loop 
 
 🛰️ Deterministic 8-bit streaming core for the AVIS architecture.
 
-***AVIS-LOGIC-CORE is a compact C-based repository implementing a deterministic 8-bit instruction-stream architecture, functional vector dispatch, stream recovery, and self-referential bootstrap logic [INDEX].
+🪐 ***AVIS-LOGIC-CORE is a compact C-based repository implementing a deterministic 8-bit instruction-stream architecture, functional vector dispatch, stream recovery, and self-referential bootstrap logic [INDEX].
 The project is designed around predictable byte-level processing rather than heavyweight runtime abstractions. Its core architecture combines:***
 
 
