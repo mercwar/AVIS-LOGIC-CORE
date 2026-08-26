@@ -37,6 +37,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/sitemap.xml</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/memory_vector_graph/schema_weights.res</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/memory_vector_graph/memory_graph.h</loc>
   </url>
   <url>
