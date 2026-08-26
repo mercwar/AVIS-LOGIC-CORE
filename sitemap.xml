@@ -19,7 +19,13 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/index.html</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/input_guardrail_schema.json</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/intent_analysis_request.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/session_state_schema.json</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/predictive_relevance_scoring.json</loc>
@@ -32,6 +38,12 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/server_search_dispatch.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/query_execution_log_schema.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/core_orchestration.avis</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/src/AvisIntegrationBridge.java</loc>
