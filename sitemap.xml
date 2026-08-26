@@ -91,10 +91,16 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/avis_system_core.json</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/ggml/build_ggml_extension.sh</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/ggml/ggml_tensor_optimizer.c</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/ggml/AvisGgmlInterface.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/ggml/ggml_plugin_module.avis</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/Makefile</loc>
