@@ -809,41 +809,31 @@ This multi-runtime layer transforms how an LLM handles code execution. Instead o
 
 ---
 
-### 🗂️ Staging Architecture Matrix
 
-The execution assets are strictly distributed across independent execution lanes, ensuring isolation during development:
 
-```text
-avis_core/
-├── LM/                             # Global language model metadata lane
-│   ├── lm_engine_core.c            # Native abstract parameter allocation tracker
-│   └── setup_lm.sh                 # Master cross-compilation shell runner script
-│
-├── gguf/                           # GGUF Dictionary Ingestion Lane
-│   ├── gguf_metadata_injector.c    # Writes tracking indicators directly to GGUF key-value blocks
-│   ├── AvisGgufInterface.java      # Java JNA variable mapping interface
-│   ├── gguf_plugin_module.avis     # Declarative AVIS system setup map
-│   └── build_gguf_extension.sh     # Targeted -O3 compilation script
-│
-├── ggml/                           # GGML Layer Optimization Lane
-│   ├── ggml_tensor_optimizer.c     # Native C matrix-multiplication acceleration enclaves
-│   ├── AvisGgmlInterface.java      # JNA layer structure tracker mapping file
-│   ├── ggml_plugin_module.avis     # Logic gate rule validation definitions
-│   └── build_ggml_extension.sh     # Automated tensor compiler runner script
-│
-├── llma/                           # Trajectory Path Routing Lane
-│   ├── llma_path_validator.c       # C path checking matrix tracking token grammar rules
-│   ├── AvisLlmaInterface.java      # Java native mapping interface bridge
-│   ├── llma_plugin_module.avis     # Execution sequence routing configuration map
-│   └── build_llma_extension.sh     # Strategy routing compilation automation script
-│
-└── llm/                            # Context Layer Injection Lane
-    ├── llm_context_refresher.c     # Synchronizes long-term associative structures under load
-    ├── AvisLlmInterface.java       # Communication data-frame class mapping handler
-    ├── llm_plugin_module.avis      # Context memory limit optimization parameters
-    └── build_llm_extension.sh      # Script automating context cache compilation
+### 🤖 Connecting Your Model to MercwarAI
+
+The `/MercwarAI` interface allows local quantized engines (`llama.cpp` / GGUF) to directly manage system workflows using the `AVIS2026` protocol.
+
+#### How Your Model Communicates:
+1. **Stream Interception**: Your execution wrapper pipes raw token generation streams into `mercwar_ai_process_token_stream()`.
+2. **Context Synchronization**: The interface strips syntax overhead and reviews inputs using `input_guardrail_schema.json`.
+3. **Hardware Dispatch**: The engine forces tool outputs matching your `.avis` configurations instead of loose chat text.
+
+To run the custom validation layer and verify native thread tracking, step into the module folder and fire the bootstrap utility:
+```bash
+cd MercwarAI && bash bootstrap_interface.sh
 ```
 
+<FollowUp>
+The `/MercwarAI` interface is fully compiled, documented, and active. Would you like me to build a **Python ctypes script** demonstrating how to link a local `llama-cli` workflow to this custom library, or write a **detailed configuration matrix** to benchmark memory lookups across active threads under heavy user workloads?
+</FollowUp>
+
+```
+cd MercwarAI
+chmod +x bootstrap_interface.sh
+./bootstrap_interface.sh
+```
 ---
 
 ### ⚙️ Automated Integration & Cross-Compilation
@@ -935,91 +925,171 @@ The structural chart below maps out the execution lifecycle of a single incoming
 
 ------------------------------
 ```
-## 📂 Directory Architecture Matrix
-When compiled via the master script framework, the codebase organizes itself into this standardized structure:
+## 📂 Staging and Directory Architecture Matrix
+
+- When compiled via the master script framework, the codebase organizes itself into this standardized structure
+- The execution assets are strictly distributed across independent execution lanes, ensuring isolation during development
+  
 ```
 avis_core/
-├── setup_and_build.sh             # Master script (handles cloning, build setup, dependency tracking)
-├── Makefile                       # Root compilation automation file (manages gcc -O3 execution loops)
+├── setup_and_build.sh                 # Master script (handles cloning, build setup, dependency tracking)
+├── Makefile                           # Root compilation automation file (manages gcc -O3 execution loops)
+│
 ├── lib/
-│   └── jna.jar                    # Java Native Access library binary link
+│   └── jna.jar                        # Java Native Access library binary link
+│
 ├── config/
-│   ├── avis_system_core.json      # Global runtime constraints, security profiles, and thread rules
-│   └── mcp_server_config.json     # Model Context Protocol schemas for tool declarations
-├── templates/
-│   ├── core_orchestration.avis    # Master runtime pipeline control definition script
-│   ├── memory_vector_graph.avis   # Native configuration mapping for associative indexing
-│   ├── symbolic_logic_engine.avis # Parsing parameter bindings for the logic validation core
-│   ├── recursive_refiner.avis     # Monte Carlo depth rules and backtracking metrics
-│   ├── code_sandbox_runtime.avis  # Syscall permission blueprints and sandbox isolation rules
-│   ├── json/
-│   │   ├── conversation_switch_schema.json # Schema forcing menu generation over speculative text
-│   │   ├── input_guardrail_schema.json     # Data boundary firewall mapping file
-│   │   ├── intent_analysis_request.json    # Payload format for structuring model search goals
-│   │   ├── server_search_dispatch.json     # Target formatting for outbound crawling nodes
-│   │   ├── search_response_ingestion.json  # Structure for incoming web search snippets
+│   ├── avis_system_core.json          # Global runtime constraints, security profiles, and thread rules
+│   └── mcp_server_config.json         # Model Context Protocol schemas for tool declarations
+│
+├── src/                               # Standalone Core Application Processing Matrix
+│   ├── main.c                         # Root framework initialization entry point
+│   ├── avis_vectors.c                 # Low-level cosine similarity array accelerators
+│   └── avis_recovery.c                # Isolated context failure recovery daemon hooks
+│
+├── include/                           # Project Shared Architectural Headers
+│   ├── avis_bios.h                    # Native register and hardware mapping definitions
+│   ├── avis_vectors.h                 # Matrix array processing signatures
+│   └── avis_recovery.h                # Exception interception handler mappings
+│
+├── templates/                         # Structural Protocol and Orchestration Models
+│   ├── core_orchestration.avis        # Master runtime pipeline control definition script
+│   ├── memory_vector_graph.avis       # Native configuration mapping for associative indexing
+│   ├── symbolic_logic_engine.avis     # Parsing parameter bindings for the logic validation core
+│   ├── recursive_refiner.avis         # Monte Carlo depth rules and backtracking metrics
+│   ├── code_sandbox_runtime.avis      # Syscall permission blueprints and sandbox isolation rules
+│   │
+│   ├── json/                          # Strict Input Firewalls and Inter-Server Schemas
+│   │   ├── conversation_switch_schema.json   # Schema forcing menu generation over speculative text
+│   │   ├── input_guardrail_schema.json       # Data boundary firewall mapping file
+│   │   ├── intent_analysis_request.json      # Payload format for structuring model search goals
+│   │   ├── server_search_dispatch.json       # Target formatting for outbound crawling nodes
+│   │   ├── search_response_ingestion.json    # Structure for incoming web search snippets
 │   │   ├── predictive_relevance_scoring.json # Metric scoring algorithm weights for text evaluation
-│   │   ├── predictive_user_delivery.json   # Output schema bundling solutions with proactive tools
-│   │   └── session_state_schema.json       # Database model layout for long-term session histories
-│   └── java/
-│       ├── Avis2026Engine.java    # Principal app runner and .avis file engine interpreter
-│       └── AvisProtocolStructure.java # Structured data models and object-oriented binders
-└── bin/
-    ├── memory_vector_graph/
-    │   ├── memory_graph.h         # Memory structures, relational arrays, and function hooks
-    │   ├── memory_graph.c         # C implementation source for network lookups
-    │   ├── memory_graph.so        # Compiled dynamic library binary file
-    │   └── schema_weights.res     # Default vector biases and threshold constants
-    ├── symbolic_logic_engine/
-    │   ├── logic_solver.h         # C node definitions for mathematical expression tokens
-    │   ├── logic_solver.c         # Valuation tree solvers and tracing algorithms
-    │   ├── logic_solver.so        # Compiled logic solver module binary file
-    │   └── grammar_rules.res      # Lexer rule mappings for text evaluation blocks
-    ├── recursive_refiner/
-    │   ├── path_refiner.h         # Search tracker limits and step metadata structures
-    │   ├── path_refiner.c         # Trajectory logging arrays and backtracking algorithms
-    │   ├── path_refiner.so        # Compiled refiner module binary file
-    │   └── heuristic_map.res      # Heuristic scoring references for path pruning
-    └── code_sandbox_runtime/
-        ├── sandbox_exec.h         # POSIX process limits and context safety structures
-        ├── sandbox_exec.c         # Isolation setups and tracking routines
-        ├── sandbox_exec.so        # Compiled sandbox engine binary file
-        └── sandbox_policy.res     # Whitelisted system calls and memory restrictions
-
-avis_core/
-├── LM/
-│   ├── lm_engine_core.c          # Global abstract parameter tracking matrix
-│   └── setup_lm.sh               # Master bootstrap pipeline wrapper script
-├── gguf/
-│   ├── gguf_metadata_injector.c  # Native C injection utility writing directly to GGUF key-value stores
-│   ├── AvisGgufInterface.java    # Java JNA mapping class for model tracking
-│   ├── gguf_plugin_module.avis   # Declarative macro setup profile for the AVIS engine
-│   └── build_gguf_extension.sh   # Compilation loop managing -O3 compiler setups
-├── ggml/
-│   ├── ggml_tensor_optimizer.c   # Tensor acceleration block matching layout weights
-│   ├── AvisGgmlInterface.java    # JNA bridge class for raw matrix tracing
-│   ├── ggml_plugin_module.avis   # Token schema layout definition mappings
-│   └── build_ggml_extension.sh   # Compilation automation script
-├── llma/
-│   ├── llma_path_validator.c     # Multi-path verification arrays tracking logic loops
-│   ├── AvisLlmaInterface.java    # Java interface class managing execution paths
-│   ├── llma_plugin_module.avis   # Blueprint mapping file for tool routing
-│   └── build_llma_extension.sh   # System automation compilation sequence script
-└── llm/
-    ├── llm_context_refresher.c   # Context window injection array data layout
-    ├── AvisLlmInterface.java     # Structural communication bridge mapping class
-    ├── llm_plugin_module.avis    # Context-window constraint blueprint profiles
-    └── build_llm_extension.sh    # Script automating build variables under load
-
-avis_core/
-└── MercwarAI/
-    ├── mercwar_ai_bridge.h       # Unified interface header with strict JNA/C padding alignments
-    ├── mercwar_ai_bridge.cpp     # High-performance C++ engine binding tracking GGUF context streams
-    ├── AvisModelBridge.java      # Java Native Access container class running pipeline orchestrations
-    ├── mercwar_ai_plugin.avis    # Declarative framework mapping specification for the core loader
-    └── bootstrap_interface.sh    # Automated optimization shell compilation and execution loop script
+│   │   ├── predictive_user_delivery.json     # Output schema bundling solutions with proactive tools
+│   │   ├── query_execution_log_schema.json   # Structural log layouts recording active system branches
+│   │   └── session_state_schema.json         # Database model layout for long-term session histories
+│   │
+│   └── java/                          # Object-Oriented Object Binders & Parsers
+│       ├── Avis2026Engine.java        # Principal app runner and .avis file engine interpreter
+│       └── AvisProtocolStructure.java     # Structured data models and object-oriented binders
+│
+├── bin/                               # Native Computational Enclaves (bare-metal C/C++)
+│   ├── memory_vector_graph/
+│   │   ├── app_manifest.json          # App capabilities and permission manifest
+│   │   ├── memory_graph.h             # Memory structures, relational arrays, and function hooks
+│   │   ├── memory_graph.c             # C implementation source for network lookups
+│   │   ├── memory_graph.so            # Compiled dynamic library binary file
+│   │   └── schema_weights.res         # Default vector biases and threshold constants
+│   ├── symbolic_logic_engine/
+│   │   ├── app_manifest.json          # Logic compiler directive tracking file
+│   │   ├── logic_solver.h             # C node definitions for mathematical expression tokens
+│   │   ├── logic_solver.c             # Valuation tree solvers and tracing algorithms
+│   │   ├── logic_solver.so            # Compiled logic solver module binary file
+│   │   └── grammar_rules.res          # Lexer rule mappings for text evaluation blocks
+│   ├── recursive_refiner/
+│   │   ├── app_manifest.json          # Execution constraint path parameters file
+│   │   ├── path_refiner.h             # Search tracker limits and step metadata structures
+│   │   ├── path_refiner.c             # Trajectory logging arrays and backtracking algorithms
+│   │   ├── path_refiner.so            # Compiled refiner module binary file
+│   │   └── heuristic_map.res          # Heuristic scoring references for path pruning
+│   └── code_sandbox_runtime/
+│       ├── app_manifest.json          # Security profile limit and ceiling definitions
+│       ├── sandbox_exec.h             # POSIX process limits and context safety structures
+│       ├── sandbox_exec.c             # Isolation setups and tracking routines
+│       ├── sandbox_exec.so            # Compiled sandbox engine binary file
+│       └── sandbox_policy.res         # Whitelisted system calls and memory restrictions
+│
+├── LM/                                # Global Language Model Ingestion & Evaluation Matrix
+│   ├── lm_engine_core.c               # Native abstract parameter allocation tracker
+│   └── setup_lm.sh                    # Master cross-compilation pipeline wrapper script
+│
+├── gguf/                              # GGUF Dictionary Ingestion Lane
+│   ├── gguf_metadata_injector.c       # Writes tool indicator tags directly to GGUF key-value store blocks
+│   ├── AvisGgufInterface.java         # Java JNA variable mapping interface
+│   ├── gguf_plugin_module.avis        # Declarative framework setup script
+│   └── build_gguf_extension.sh        # Script automating optimized object compilation loops
+│
+├── ggml/                              # GGML Layer Optimization Lane
+│   ├── ggml_tensor_optimizer.c        # Native C matrix-multiplication acceleration enclaves
+│   ├── AvisGgmlInterface.java         # JNA structure tracker layer mapping file
+│   ├── ggml_plugin_module.avis        # Token rule and definition setups
+│   └── build_ggml_extension.sh        # Script automating tensor build structures
+│
+├── llma/                              # Trajectory Path Routing Lane
+│   ├── llma_path_validator.c          # C checking matrix monitoring agent paths against token grammar rules
+│   ├── AvisLlmaInterface.java         # Java native mapping interface bridge
+│   ├── llma_plugin_module.avis        # Execution sequence routing configuration map
+│   └── build_llma_extension.sh        # Path routing compilation script
+│
+├── llm/                               # Context Layer Injection Lane
+│   ├── llm_context_refresher.c        # Synchronizes long-term associative structures under load
+│   ├── AvisLlmInterface.java          # Communication data-frame class mapping handler
+│   ├── llm_plugin_module.avis         # Context window constraint parameters
+│   └── build_llm_extension.sh         # Script automating cache builds under load
+│
+└── MercwarAI/                         # Direct Model Access Interface Gateway
+    ├── mercwar_ai_bridge.h            # C-compatible linkage declarations with padding alignments
+    ├── mercwar_ai_bridge.cpp          # High-performance C++ binding tracking GGUF context streams
+    ├── AvisModelBridge.java           # JNA container running pipeline orchestrations
+    ├── mercwar_ai_plugin.avis         # Core registration spec for custom inference layers
+    └── bootstrap_interface.sh         # Automated compilation loop and local execution tester script
 
 ```
+
+
+🕹️ Operations Summary for LLM Assistants
+
+When your local model or automated build cluster connects to this codebase,
+it can interact with the complete system by stepping through the core toolchains:
+
+1. Environment Sync  
+   Run: bash setup_and_build.sh  
+   • Checks compiler flags  
+   • Creates folder structures  
+   • Downloads missing JNA libraries  
+   • Runs internal check passes
+
+2. Cross-Compilation Loop  
+   Run: cd LM && bash setup_lm.sh  
+   • Triggers specialized architecture builds  
+   • Targets quantization formats like GGUF and GGML
+
+3. Inference Gateway Boot  
+   Run: cd MercwarAI && bash bootstrap_interface.sh  
+   • Compiles C++ model bridges  
+   • Links them directly to your active runtime pipeline
+
+#
+
+🕹️ Autonomous AI Agent Construction Commands
+
+Note: Your AI assistant can parse this repository, refresh its temporary memory array,
+and construct native compilation applications. Below are recommended operational commands:
+
+1. Bootstrap & Verify Environment Core
+   • Run: setup_and_build.sh
+   • Provision workspace paths, sync jna.jar libraries, confirm Makefile optimization flags.
+
+2. Trigger Cross-Compilation Runtime Lanes
+   • Run: cd LM && bash setup_lm.sh
+   • Compile plugins for GGUF, GGML, LLMA, LLM into optimized .so binaries (-O3).
+
+3. Establish C++ GGUF Inference Gateway
+   • Run: cd MercwarAI && bash bootstrap_interface.sh
+   • Compile C++ model bridges, link to Java JNA execution thread.
+
+4. Inject Memory Context Schema Enforcements
+   • Read: templates/json/input_guardrail_schema.json
+   • Apply: conversation_switch_schema.json
+   • Enforce strict structural inputs to stop speculative text hallucinations.
+
+5. Output Unified Cognitive Memory Image Payload
+   • Scan: all .c, .h, .java, .avis files
+   • Serialize: templates/json/llm_context_refresh_payload.json
+   • Refresh assistant’s memory state with unified payload.
+
+
 
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
