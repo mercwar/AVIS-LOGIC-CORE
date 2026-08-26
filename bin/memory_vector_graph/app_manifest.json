@@ -1,0 +1,22 @@
+{
+  "app_id": "AV-01-MEMORY-VECTOR-GRAPH",
+  "version": "1.0.3",
+  "entry_points": {
+    "native_binary": "bin/memory_vector_graph/memory_graph.so",
+    "java_binding_class": "AvisIntegrationBridge$MemoryGraphLib"
+  },
+  "capabilities": {
+    "vector_dimensions": 1536,
+    "graph_traversal_algorithm": "BEAM_SEARCH_ASSOCIATIVE",
+    "persistent_index_storage": true
+  },
+  "resources": {
+    "configuration_file": "bin/memory_vector_graph/schema_weights.res",
+    "max_allocated_nodes": 1048576
+  },
+  "permissions": [
+    "READ_LOCAL_CACHE",
+    "WRITE_LOCAL_CACHE",
+    "DYNAMIC_MEMORY_ALLOCATION"
+  ]
+}
