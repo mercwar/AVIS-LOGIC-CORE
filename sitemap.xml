@@ -19,6 +19,18 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/index.html</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/gguf/gguf_plugin_module.avis</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/gguf/gguf_metadata_injector.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/gguf/build_gguf_extension.sh</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/gguf/AvisGgufInterface.java</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/java/AvisProtocolStructure.java</loc>
   </url>
   <url>
@@ -68,6 +80,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/LM/lm_engine_core.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/LM/setup_lm.sh</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/mcp_server_config.json</loc>
