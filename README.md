@@ -1095,7 +1095,18 @@ and construct native compilation applications. Below are recommended operational
             --grammar-file ./config/conversation_switch.gbnf \
             -p "User: Deploy system monitoring metrics."
 ```
+# 1. Clean the workspace and build fresh optimized C shared objects
 
+make clean && make all
+
+# 2. Compile the performance metric collector using the local JNA link paths
+```
+javac -cp .:lib/jna.jar src/BenchmarkMatrixLoad.java
+```
+# 3. Fire the concurrent load testing matrix tool
+```
+java -cp .:lib/jna.jar src.BenchmarkMatrixLoad
+```
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
