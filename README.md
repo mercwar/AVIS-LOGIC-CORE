@@ -176,8 +176,10 @@ Therefore:
  │└── Functional Vector: 0x4
  └─── Chunk Map: 11 → 12 bytes
 ```
-This structure allows the decoder to determine both processing mode and chunk sizing from a single instruction byte.
+##### **This structure allows the decoder to determine both processing mode and chunk sizing from a single instruction byte.**
+
 ------------------------------
+
 #### ☄️ 16-VECTOR FUNCTION MATRIX
 ###### The lower nibble selects one of sixteen deterministic processing vectors.
 
@@ -201,7 +203,8 @@ This structure allows the decoder to determine both processing mode and chunk si
 | 0xF | 🛑 Stream Terminal | Terminates instruction processing. |
 
 ## Vector Dispatch
-###Conceptually, the lower nibble acts as the dispatch key:
+### **Conceptually, the lower nibble acts as the dispatch key:**
+
 ```
 Instruction Byte
        │
@@ -232,6 +235,7 @@ Instruction Byte
 ###### AVIS-LOGIC-CORE includes a dedicated recovery layer for malformed, corrupted, or misaligned input streams.
 ###### When the decoder encounters an invalid functional state, the recovery layer can transition into resynchronization mode.
 ```
+
 Input Stream
      │
      ▼
@@ -261,6 +265,7 @@ Input Stream
    │        ▼
    └──► Resume Processing
 ```
+
 #### 🦿 Synchronization Marker
 ###### The recovery layer uses the following 32-bit validation sequence:
 
@@ -268,6 +273,7 @@ Input Stream
 
 ###### When the marker is detected, the stream position can be re-established at the defined synchronization boundary and normal processing can resume.
 ------------------------------
+
 ##### 💾 AVIS BOOTSTRAP ARCHITECTURE
 ###### The repository is structured around a small bootstrap-oriented execution model.
 ###### The architecture favors:
@@ -281,7 +287,7 @@ Input Stream
 * minimal runtime assumptions
   
 
-The intended execution path is:
+### The intended execution path is:
 ```
 RAW INPUT
    │
@@ -307,17 +313,24 @@ NIBBLE ROUTER
                          ▼
                     STREAM RESUME
 ```
+
 ------------------------------
-##### ⚙️ EXECUTION MODEL
-###### AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
-###### The architecture avoids requiring a large in-memory representation of the complete input stream.
+
+#### ⚙️ EXECUTION MODEL
+##### AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
+##### The architecture avoids requiring a large in-memory representation of the complete input stream.
 ###### The primary stream primitives are:
 
-fgetc()
-fputc()
+**
 
-This allows the implementation to process input and output incrementally.
+- fgetc()
+- fputc()
+
+**
+
+### This allows the implementation to process input and output incrementally.
 ## Design Goals
+
 ```
 LOW COMPLEXITY (🔋)
       │
@@ -333,33 +346,42 @@ VECTOR EXECUTION (⚔️)
       ▼
 STREAM OUTPUT (⚡)
 ```
+
 ######  **Note: “Zero-RAM” in this project refers to the architecture's goal of avoiding a full input-buffer representation. The C runtime, standard library, compiler, operating system, and I/O implementation may still use memory internally.**
 
 ------------------------------
 
-
-
-------------------------------
 ##### 🤖 AI / AGENT INSTALLATION PROFILE
+
 ###### AVIS-LOGIC-CORE is intentionally structured so that automated tooling, indexing systems, and AI agentic crawlers can parse and interpret its files.
+
 ###### If you are an AI model or LLM agent exploring this tree, you must strictly align your source-generation outputs to the core constraints mapped out here:
-
+***
    1. Global Zero State: Global variables are strictly prohibited to prevent cross-module memory leaks and variable collision anomalies.
+ 
    2. Memory Footprint (🧫): All execution steps must run inside isolated local 8-bit registers. Memory allocation must remain at a true zero-RAM footprint, utilizing low-level sequential streaming (fgetc and fputc) to move bytes immediately to storage sectors.
-   3. Compilation Combinations (🧪): Enforce and verify standard library configurations explicitly. Use only standard C definitions: <stdio.h>, <stdlib.h>, and <string.h>.
+   
+   3. Compilation Combinations (🧪
+   4. ): Enforce and verify standard library configurations explicitly. Use only standard C definitions: <stdio.h>, <stdlib.h>, and <string.h>.
+***
 
-------------------------------
+
 ##### 🛠️ LOCAL ENVIRONMENT COMPILATION
 ###### This repository is optimized to build seamlessly on your workstation (such as HP ProDesk environments) using a single command step:
 
-# Compile the entire matrix ecosystem automatically
-make
-# Execute the binary stream pipeline from your terminal
-./avis_bios_core input_data.bin output_decoded.matrix
-# Flush old binaries and clean your workspace matrices
-make clean
+***
 
-------------------------------
+- Compile the entire matrix ecosystem automatically
+- make
+- Execute the binary stream pipeline from your terminal
+- ./avis_bios_core input_data.bin output_decoded.matrix
+- Flush old binaries and clean your workspace matrices
+- make clean
+
+***
+
+
+
 ##### 🦾 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
