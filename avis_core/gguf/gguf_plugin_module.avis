@@ -1,0 +1,16 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/gguf/gguf_plugin_module.avis
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-EXT-GGUF-METADATA"
+    BINARY_SOURCE  = "gguf/gguf_metadata_injector.so"
+    INTERFACE_BIND = "gguf.AvisGgufInterface"
+
+[INJECTION_TUNING]
+    STRICT_KEY_ENFORCEMENT = TRUE
+    EXPORT_METADATA_HEADER = "AVIS2026_IQ_BOOST"
+
+[EOF]
+AVIS_PLUGIN_GGUF_ACTIVE
