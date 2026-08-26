@@ -940,12 +940,14 @@ avis_core/
 │
 ├── config/
 │   ├── avis_system_core.json          # Global runtime constraints, security profiles, and thread rules
-│   └── mcp_server_config.json         # Model Context Protocol schemas for tool declarations
+│   ├── mcp_server_config.json         # Model Context Protocol schemas for tool declarations
+│   └── conversation_switch.gbnf       # GBNF sampling constraint matrix tracking user choices
 │
 ├── src/                               # Standalone Core Application Processing Matrix
 │   ├── main.c                         # Root framework initialization entry point
 │   ├── avis_vectors.c                 # Low-level cosine similarity array accelerators
-│   └── avis_recovery.c                # Isolated context failure recovery daemon hooks
+│   ├── avis_recovery.c                # Isolated context failure recovery daemon hooks
+│   └── BenchmarkMatrixLoad.java       # High-concurrency Java-to-C parallel performance load tester
 │
 ├── include/                           # Project Shared Architectural Headers
 │   ├── avis_bios.h                    # Native register and hardware mapping definitions
@@ -972,7 +974,7 @@ avis_core/
 │   │
 │   └── java/                          # Object-Oriented Object Binders & Parsers
 │       ├── Avis2026Engine.java        # Principal app runner and .avis file engine interpreter
-│       └── AvisProtocolStructure.java     # Structured data models and object-oriented binders
+│       └── AvisProtocolStructure.java # Structured data models and object-oriented binders
 │
 ├── bin/                               # Native Computational Enclaves (bare-metal C/C++)
 │   ├── memory_vector_graph/
@@ -1026,7 +1028,7 @@ avis_core/
 │   ├── llm_context_refresher.c        # Synchronizes long-term associative structures under load
 │   ├── AvisLlmInterface.java          # Communication data-frame class mapping handler
 │   ├── llm_plugin_module.avis         # Context window constraint parameters
-│   └── build_llm_extension.sh         # Script automating cache builds under load
+│   └── build_llm_extension.sh         # Script automating context cache builds under load
 │
 └── MercwarAI/                         # Direct Model Access Interface Gateway
     ├── mercwar_ai_bridge.h            # C-compatible linkage declarations with padding alignments
@@ -1034,6 +1036,7 @@ avis_core/
     ├── AvisModelBridge.java           # JNA container running pipeline orchestrations
     ├── mercwar_ai_plugin.avis         # Core registration spec for custom inference layers
     └── bootstrap_interface.sh         # Automated compilation loop and local execution tester script
+
 
 ```
 
