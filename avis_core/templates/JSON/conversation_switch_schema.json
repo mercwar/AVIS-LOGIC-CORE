@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://avis.core",
+  "title": "AvisConversationSwitchSchema",
+  "description": "Defines interactive UI option prompts, branching logic, and menu switches for user selection.",
+  "type": "object",
+  "properties": {
+    "switch_context_id": {
+      "type": "string",
+      "description": "Unique UUID referencing this specific transactional choice point."
+    },
+    "trigger_condition": {
+      "type": "string",
+      "enum": ["AMBIGUOUS_QUERY", "RESOURCE_CONFLICT", "CONFIRMATION_REQUIRED", "STRATEGY_SELECTION"],
+      "description": "The exact system state that caused the interactive menu to trigger."
+    },
+    "display_prompt_text": {
+      "type": "string",
+      "description": "The direct question or instruction rendered to the end-user interface."
+    },
+    "interactive_options": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "description": "The explicit choices presented to the user to guide the execution path.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "option_index": { "type": "integer" },
+          "button_label": { "type": "string", "description": "Short, actionable button text." },
+          "target_intent_branch": { "type": "string", "description": "The system keyword state this choice triggers if selected." },
+          "preloaded_payload_parameters": {
+            "type": "object",
+            "description": "Optional parameters passed down to speed up execution when clicked."
+          }
+        },
+        "required": ["option_index", "button_label", "target_intent_branch"]
+      }
+    },
+    "allow_custom_user_override": {
+      "type": "boolean",
+      "description": "If true, displays a text field alongside the choices for manual overrides."
+    }
+  },
+  "required": ["switch_context_id", "trigger_condition", "display_prompt_text", "interactive_options", "allow_custom_user_override"]
+}
