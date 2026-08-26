@@ -900,6 +900,30 @@ avis_core/
         ├── sandbox_exec.so        # Compiled sandbox engine binary file
         └── sandbox_policy.res     # Whitelisted system calls and memory restrictions
 
+avis_core/
+├── LM/
+│   ├── lm_engine_core.c          # Global abstract parameter tracking matrix
+│   └── setup_lm.sh               # Master bootstrap pipeline wrapper script
+├── gguf/
+│   ├── gguf_metadata_injector.c  # Native C injection utility writing directly to GGUF key-value stores
+│   ├── AvisGgufInterface.java    # Java JNA mapping class for model tracking
+│   ├── gguf_plugin_module.avis   # Declarative macro setup profile for the AVIS engine
+│   └── build_gguf_extension.sh   # Compilation loop managing -O3 compiler setups
+├── ggml/
+│   ├── ggml_tensor_optimizer.c   # Tensor acceleration block matching layout weights
+│   ├── AvisGgmlInterface.java    # JNA bridge class for raw matrix tracing
+│   ├── ggml_plugin_module.avis   # Token schema layout definition mappings
+│   └── build_ggml_extension.sh   # Compilation automation script
+├── llma/
+│   ├── llma_path_validator.c     # Multi-path verification arrays tracking logic loops
+│   ├── AvisLlmaInterface.java    # Java interface class managing execution paths
+│   ├── llma_plugin_module.avis   # Blueprint mapping file for tool routing
+│   └── build_llma_extension.sh   # System automation compilation sequence script
+└── llm/
+    ├── llm_context_refresher.c   # Context window injection array data layout
+    ├── AvisLlmInterface.java     # Structural communication bridge mapping class
+    ├── llm_plugin_module.avis    # Context-window constraint blueprint profiles
+    └── build_llm_extension.sh    # Script automating build variables under load
 
 ```
 
