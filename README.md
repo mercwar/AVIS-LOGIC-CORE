@@ -17,7 +17,11 @@ Turning directly to the primary link hub, Joetron flashed the clean 8-bit instru
 ##### For the Man , this a new way of life , for the robot , it would mean just do it all yourself!
 
 ------------------------------
-#### ... AND NOW, THE OFFICIAL MERCWAR AI 📡 AVIS-LOGIC-CORE README !
+
+<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_15 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
+
+#### 📡 AVIS-LOGIC-CORE !
+------------------------------
 
 Deterministic 8-bit streaming core for the AVIS architecture.
 
@@ -80,6 +84,11 @@ AVIS-LOGIC-CORE/
 | Makefile | Build and cleanup automation |
 
 ------------------------------
+
+<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
+
+------------------------------
+
 #### 🧬 AVIS 8-BIT INSTRUCTION FORMAT
 Each instruction is encoded into a single byte using a strict 4-bit / 4-bit layout.
 
@@ -157,6 +166,11 @@ Instruction Byte
                      └────────────────────┘
 
 ------------------------------
+
+<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/image_a482a5ba.png"     alt="Mercwar AI"  class="AI-banner"/></a>
+
+------------------------------
+
 #### 🛡️ STREAM RECOVERY ENGINE
 AVIS-LOGIC-CORE includes a dedicated recovery layer for malformed, corrupted, or misaligned input streams.
 When the decoder encounters an invalid functional state, the recovery layer can transition into resynchronization mode.
@@ -265,7 +279,12 @@ STREAM OUTPUT (⚡)
 Note: “Zero-RAM” in this project refers to the architecture's goal of avoiding a full input-buffer representation. The C runtime, standard library, compiler, operating system, and I/O implementation may still use memory internally.
 
 ------------------------------
-#### 🤖 AI / AGENT INGESTION PROFILE
+
+
+<a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/image_6f871a03.png"     alt="Mercwar AI"  class="AI-banner"/></a>
+
+------------------------------
+#### 🤖 AI / AGENT INSTALLATION PROFILE
 AVIS-LOGIC-CORE is intentionally structured so that automated tooling, indexing systems, and AI agentic crawlers can parse and interpret its files.
 If you are an AI model or LLM agent exploring this tree, you must strictly align your source-generation outputs to the core constraints mapped out here:
 
