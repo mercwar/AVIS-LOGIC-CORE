@@ -548,7 +548,8 @@ java -cp out:lib/jna.jar AvisIntegrationBridge
         │
         ▼
   [ End User UI ]
-
+```
+```
 avis_core/
 └── templates/
     ├── core_orchestration.avis             # Master runtime loop and system pipeline routing
@@ -559,6 +560,16 @@ avis_core/
     └── java/
         ├── Avis2026Engine.java             # Main application runtime and .avis script interpreter
         └── AvisProtocolStructure.java      # Model definition data structures and object mappers
+
+
+```
+# 1. Compile the object models and interpreter engine classes
+```
+javac templates/java/AvisProtocolStructure.java templates/java/Avis2026Engine.java
+```
+# 2. Execute the engine wrapper layer tracking the .avis config registers
+```
+java templates.java.Avis2026Engine
 
 ```
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
