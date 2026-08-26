@@ -1,0 +1,18 @@
+{
+  "app_id": "AV-04-CODE-SANDBOX-RUNTIME",
+  "version": "4.0.0",
+  "entry_points": {
+    "native_binary": "bin/code_sandbox_runtime/sandbox_exec.so",
+    "java_binding_class": "AvisIntegrationBridge$SandboxExecLib"
+  },
+  "security_profile": {
+    "enforce_rlimits": true,
+    "max_memory_bytes": 67108864,
+    "max_cpu_time_milliseconds": 500,
+    "syscall_policy_file": "bin/code_sandbox_runtime/sandbox_policy.res"
+  },
+  "permissions": [
+    "CREATE_ISOLATED_PROCESS",
+    "INTERCEPT_SYSTEM_SIGNALS"
+  ]
+}
