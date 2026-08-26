@@ -278,7 +278,7 @@ Therefore:
 | 0xE | ⚡ Signed Bit Packing | Packs numerical wave data into 8-bit representations. |
 | 0xF | 🛑 Stream Terminal | Terminates instruction processing. |
 
-## Vector Dispatch
+## 🌀 Vector Dispatch
 ### **Conceptually, the lower nibble acts as the dispatch key:**
 
 ```
@@ -345,7 +345,9 @@ Input Stream
 #### 🦿 Synchronization Marker
 ###### The recovery layer uses the following 32-bit validation sequence:
 
-######  `0xDEADBEEF`
+#
+ 
+######  ***`0xDEADBEEF`***
 
 ###### When the marker is detected, the stream position can be re-established at the defined synchronization boundary and normal processing can resume.
 ------------------------------
@@ -363,6 +365,8 @@ Input Stream
 * minimal runtime assumptions
   
 
+#
+ 
 ### The intended execution path is:
 ```
 RAW INPUT
