@@ -25,10 +25,22 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/predictive_relevance_scoring.json</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/predictive_user_delivery.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/conversation_switch_schema.json</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/templates/JSON/server_search_dispatch.json</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/src/AvisIntegrationBridge.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/mcp_server_config.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/config/avis_system_core.json</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/avis_core/Makefile</loc>
@@ -61,6 +73,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/recursive_refiner/path_refiner.h</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/recursive_refiner/app_manifest.json</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/memory_vector_graph/schema_weights.res</loc>
   </url>
   <url>
@@ -68,6 +83,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/memory_vector_graph/memory_graph.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/memory_vector_graph/app_manifest.json</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/code_sandbox_runtime/sandbox_exec.c</loc>
@@ -79,10 +97,16 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/code_sandbox_runtime/sandbox_policy.res</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/code_sandbox_runtime/app_manifest.json</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/symbolic_logic_engine/grammar_rules.res</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/symbolic_logic_engine/logic_solver.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/symbolic_logic_engine/app_manifest.json</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/symbolic_logic_engine/logic_solver.c</loc>
