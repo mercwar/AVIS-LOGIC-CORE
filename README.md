@@ -346,7 +346,7 @@ Input Stream
    └──► Resume Processing
 ```
 
-#### 🦿 Synchronization Marker
+#### ☄️ Synchronization Marker
 ###### The recovery layer uses the following 32-bit validation sequence:
 
 #
