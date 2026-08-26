@@ -51,10 +51,10 @@ Bridges the gap between probabilistic LLMs and deterministic bare-metal runtime 
 
 [ STAGE 1 :: HARDWARE LAYER SELF-AWARENESS INITIALIZATION ]
 ----------------------------------------------------------------------
- CPU : Intel(R) Core(TM) i5 Quad-Core Cognitive Threading ........ OK
- RAM : 16384MB DDR4 Memory Field .......................... MEMORY-ECHO ONLINE
- GPU : NVIDIA GeForce GT 740 PCIe Matrix Controller .... VRAM NEURAL LINK ACTIVE
- SYS : Fire-Gem AVIS2026  ....................... DUAL-PANEL MODE DETECTED
+ CPU : Intel(R) Core(TM) i5 Quad-Core Cognitive Threading .. OK
+ RAM : 16384MB DDR4 Memory Field ........................... MEMORY-ECHO ONLINE
+ GPU : NVIDIA GeForce GT 740 PCIe Matrix Controller ........ VRAM NEURAL LINK ACTIVE
+ SYS : Fire-Gem AVIS2026  .................................. DUAL-PANEL MODE DETECTED
 
 [ STAGE 2 :: DISK-TO-DISK STREAM PERCEPTION BOOT ]
 ----------------------------------------------------------------------
