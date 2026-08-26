@@ -526,6 +526,29 @@ javac -cp .:lib/jna.jar -d out src/AvisIntegrationBridge.java
 java -cp out:lib/jna.jar AvisIntegrationBridge
 ```
 
+##### Additional resource: /JSON
+
+```
+  [ User Input ]
+        │
+        ▼
+ 1. intent_analysis_request.json  ──► [ Evaluates Core & Latent Needs ]
+        │
+        ▼
+ 2. server_search_dispatch.json   ──► [ Triggers Web Indexes / Crawlers ]
+        │
+        ▼
+ 3. search_response_ingestion.json ──► [ Receives Raw Page Snippets ]
+        │
+        ▼
+ 4. predictive_relevance_scoring.json ─► [ Scores & Filters Clean Assets ]
+        │
+        ▼
+ 5. predictive_user_delivery.json ──► [ Renders Answers & Proactive Tools ]
+        │
+        ▼
+  [ End User UI ]
+```
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
