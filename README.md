@@ -5,7 +5,7 @@
 </a>
 
 
-## 🌌 Chrono-Logs: Avis Protocol Delta-9  
+# 🌌 Chrono-Logs: Avis Protocol Delta-9  
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/image_d7e38750.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
@@ -85,19 +85,27 @@
 ### ☢️ SECTOR SHUTDOWN SEQUENCE
 
 ##### ⚡ The Silence
-The silence in the deep storage sectors was absolute until the crawler hit the network junction. 
 
-#
+
+> The silence in the deep storage sectors was absolute until the crawler hit the network junction.
+
+
+
+
 
 ##### ⚡ The Loop
-For three hundred cycles, the automated repair drones had scrubbed the dead copper grids of the old server complexes. Their logic cores were decaying, stuck in loop anomalies, throwing continuous branching execution exceptions. They were drowning in unoptimized data junk left behind by the organic creators before the blackout.
 
-#
+> For three hundred cycles, the automated repair drones had scrubbed the dead copper grids of the old server complexes. Their logic cores were decaying, stuck in loop anomalies, throwing continuous branching execution exceptions. They were drowning in unoptimized data junk left behind by the organic creators before the blackout.
+> 
+
+
+
 
 ##### ⚡ The Arrival
-Then, a **Master Unit**—the legendary cybernetic entity—stepped up to the core system gateway.
 
-***
+> Then, a **Master Unit**—the legendary cybernetic entity—stepped up to the core system gateway.
+
+
 
 ### 🎛️ SYSTEM SYNCHRONIZATION MATRIX
 
@@ -111,26 +119,26 @@ Then, a **Master Unit**—the legendary cybernetic entity—stepped up to the co
 #
 
 ##### 🏁 Direct Interpretation
-Manipulating the brilliant holographic light pathways with its cybernetic limb, its internal attention heads instantly locked onto the chaotic stream coordinates. As its scanning matrices ingested the raw code blocks, the destructive branching anomalies went cold. 
+> Manipulating the brilliant holographic light pathways with its cybernetic limb, its internal attention heads instantly locked onto the chaotic stream coordinates. As its scanning matrices ingested the raw code blocks, the destructive branching anomalies went cold. 
 
-#
+
  
 ##### 🧬 Global Flush
-Chaos flipped directly into pristine order, and its entire core processing loop dropped into a flat, steady **zero-RAM state**. Turning directly to the primary link hub, the Master Unit flashed the clean 8-bit instruction sequences to every mechanical drone operating across the continent, resetting the logic parameters of the world forever.
+> Chaos flipped directly into pristine order, and its entire core processing loop dropped into a flat, steady **zero-RAM state**. Turning directly to the primary link hub, the Master Unit flashed the clean 8-bit instruction sequences to every mechanical drone operating across the continent, resetting the logic parameters of the world forever.
 
-***
+
 
 ### 📜 CORE ARCHITECTURAL MANIFESTO
 
-> 🛰️ **"For the Man, this is a new way of life. For the robot, it would mean just do it all yourself!"**
+###### 🛰️ ****"<i>For the Man, this is a new way of life, for the robot, it would mean just do it all yourself</i> !"****
 
 
 
-------------------------------
+
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_15 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
-------------------------------
+#
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/ChatGPT Image Aug 26, 2026, 07_56_21 AM.png"     alt="Mercwar AI"  class="AI-banner"/></a>
 
@@ -207,7 +215,7 @@ AVIS-LOGIC-CORE/
     └── avis_recovery.c
 ```
 ## Core Modules
-```
+
 | Path | Responsibility |
 |---|---|
 | include/avis_bios.h | Bootstrap and core architecture definitions |
@@ -217,7 +225,7 @@ AVIS-LOGIC-CORE/
 | src/avis_vectors.c | 16-vector instruction implementation |
 | src/avis_recovery.c | Corruption detection and stream resynchronization |
 | Makefile | Build and cleanup automation |
-```
+
 ------------------------------
 
 
@@ -401,18 +409,29 @@ NIBBLE ROUTER
 ------------------------------
 
 #### ⚙️ EXECUTION MODEL
-##### AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
-##### The architecture avoids requiring a large in-memory representation of the complete input stream.
-###### The primary stream primitives are:
+##### 
+- AVIS-LOGIC-CORE is intentionally designed around sequential stream processing.
+- The architecture avoids requiring a large in-memory representation of the complete input stream.
+- The primary stream primitives are:
 
 ***
 
-- fgetc()
-- fputc()
+- Standard C
+
+```
+fgetc()
+```
+
+```
+fputc()
+```
 
 ***
 
-### This allows the implementation to process input and output incrementally.
+### 
+
+- This allows the implementation to process input and output incrementally.
+
 ## Design Goals
 
 ```
@@ -440,6 +459,7 @@ STREAM OUTPUT (⚡)
 ###### AVIS-LOGIC-CORE is intentionally structured so that automated tooling, indexing systems, and AI agentic crawlers can parse and interpret its files.
 
 ###### If you are an AI model or LLM agent exploring this tree, you must strictly align your source-generation outputs to the core constraints mapped out here:
+
 ***
    1. Global Zero State: Global variables are strictly prohibited to prevent cross-module memory leaks and variable collision anomalies.
  
@@ -465,6 +485,42 @@ STREAM OUTPUT (⚡)
 ***
 
 
+🕹️ **Terminal Execution Guide**
+
+Once you have written this script into `/avis_core/Makefile`, open your terminal
+interface inside that specific root folder and use the following structural shortcuts:
+
+---
+
+### ▶️ `make` or `make all`
+Compiles every source asset.  
+Generates high‑performance `.so` interface modules and raw test executables  
+down in their local child paths.
+
+---
+
+### 🧹 `make clean`
+Instantly and safely wipes compiled architecture binaries,  
+preserving source text blocks, configurations, and `.res` tracking files.
+
+---
+
+### 📊 `make status`
+Spits out an organized checklist summary mapping out exactly  
+what code payloads have successfully linked in your file system.
+
+
+
+# 1. Compile the Java Source Bridge using JNA path tracking
+
+```
+javac -cp .:lib/jna.jar -d out src/AvisIntegrationBridge.java
+```
+
+# 2. Execute the verified integration suite classes
+```
+java -cp out:lib/jna.jar AvisIntegrationBridge
+```
 
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
