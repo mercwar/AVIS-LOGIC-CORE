@@ -1089,7 +1089,12 @@ and construct native compilation applications. Below are recommended operational
    • Serialize: templates/json/llm_context_refresh_payload.json
    • Refresh assistant’s memory state with unified payload.
 
-
+#
+```
+./llama-cli -m models/deepseek-r1-7b-q4_k_m.gguf \
+            --grammar-file ./config/conversation_switch.gbnf \
+            -p "User: Deploy system monitoring metrics."
+```
 
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
