@@ -371,7 +371,7 @@ Input Stream
 
 #
  
-### The intended execution path is:
+### 🌍 The intended execution path is:
 ```
 RAW INPUT
    │
@@ -466,7 +466,7 @@ STREAM OUTPUT (⚡)
 
 
 
-##### 🦾 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
+##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
 
