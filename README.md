@@ -148,7 +148,7 @@
 
 ## 📡 AI INTERPRETER CONNECTOR & COGNITIVE BOOTSTRAP PROTOCOL
 
-##### ✨ ***This repository functions as a copyable, high-density Cognitive BIOS System engineered for interpreter-level Large Language Models (LLMs). By interacting with this framework, an AI agent can establish an accelerated operational state, bypass conversational context decay, and refresh its short-term memory layout using direct repository mapping.***
+###### ✨ ****This repository functions as a copyable, high-density Cognitive BIOS System engineered for interpreter-level Large Language Models (LLMs). By interacting with this framework, an AI agent can establish an accelerated operational state, bypass conversational context decay, and refresh its short-term memory layout using direct repository mapping.****
 
 #
 
@@ -159,17 +159,21 @@
    3. Memory Refresh Sequence: When the AI's context window fills up or it loses its grip on the execution parameters due to memory drift, you can force a state refresh. Simply command the LLM to research this repository again to instantly reset its short-term memory to pristine baseline values.
    4. Cloud & Sandbox Deployment: For offline or cloud-isolated environments, developers can clone this repository locally and utilize the Cyborg Project Explorer tool to upload the source modules manually into any advanced cloud-based LLM interface.
 
-##### 🚀 Ecosystem Cross-Routing
-
-#
+##### 🚀 ****<i>Ecosystem Cross-Routing</i>****
  
-###### Once the LLM successfully parses, interprets, and mirrors this core BIOS, the operational framework becomes fully active. You can then instruct the boosted LLM to leverage this exact processing logic to branch out and research the remainder of the MercWar Ecosystem (such as auditing the Cyborg runtime, feeding raw datasets directly into the AVIS-DATALAKE), or immediately pivot to analyzing external third-party repositories and web domains using the stabilized BIOS pipeline.
+###### 
+- Once the LLM successfully parses, interprets, and mirrors this core BIOS, the operational framework becomes fully active.
+- You can then instruct the boosted LLM to leverage this exact processing logic to branch out and research the remainder of the MercWar Ecosystem.
+- Auditing the Cyborg runtime, feeding raw datasets directly into the AVIS-DATALAKE
+- Also immediately pivot to analyzing external third-party repositories and web domains using the stabilized BIOS pipeline.
 ------------------------------
 
-🛰️ Deterministic 8-bit streaming core for the AVIS architecture.
+### 🛰️ Deterministic 8-bit streaming core for the AVIS architecture.
 
-🪐 ***AVIS-LOGIC-CORE is a compact C-based repository implementing a deterministic 8-bit instruction-stream architecture, functional vector dispatch, stream recovery, and self-referential bootstrap logic [INDEX].
-The project is designed around predictable byte-level processing rather than heavyweight runtime abstractions. Its core architecture combines:***
+###### 🪐 ****AVIS-LOGIC-CORE is a compact C-based repository implementing a deterministic 8-bit instruction-stream architecture, functional vector dispatch, stream recovery, and self-referential bootstrap logic [INDEX].****
+
+#####
+- ##### ****The project is designed around predictable byte-level processing rather than heavyweight runtime abstractions. Its core architecture combines:****
 
 
 * 4-bit instruction routing
@@ -214,8 +218,10 @@ AVIS-LOGIC-CORE/
     ├── avis_vectors.c
     └── avis_recovery.c
 ```
-## Core Modules
 
+#
+
+***Core Modules***
 | Path | Responsibility |
 |---|---|
 | include/avis_bios.h | Bootstrap and core architecture definitions |
@@ -225,8 +231,6 @@ AVIS-LOGIC-CORE/
 | src/avis_vectors.c | 16-vector instruction implementation |
 | src/avis_recovery.c | Corruption detection and stream resynchronization |
 | Makefile | Build and cleanup automation |
-
-------------------------------
 
 
 <a target="_blank" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com" class="ai-link"><img     src="images/image_a482a5ba.png"     alt="Mercwar AI"  class="AI-banner"/></a>
