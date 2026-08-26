@@ -1090,23 +1090,50 @@ and construct native compilation applications. Below are recommended operational
    • Refresh assistant’s memory state with unified payload.
 
 #
-```
+
+## 🕹️ Model Grammar Enforcement & Concurrency Benchmarking Manual
+
+This section explains how to restrict GGUF/GGML models to strict syntax using GBNF grammar,
+and how to run Java concurrency benchmarks against optimized C libraries.
+
+---
+
+### 🔬 1. GBNF Grammar Enforcement
+- Config file: `config/conversation_switch.gbnf`
+- Forces model output into structured JSON (`conversation_switch_schema.json`)
+- Eliminates speculative conversational text
+
+**Operational Command:**
+```bash
 ./llama-cli -m models/deepseek-r1-7b-q4_k_m.gguf \
             --grammar-file ./config/conversation_switch.gbnf \
             -p "User: Deploy system monitoring metrics."
 ```
-# 1. Clean the workspace and build fresh optimized C shared objects
 
+---
+
+### ☕ 2. Java Concurrency Benchmark
+- Harness: `src/BenchmarkMatrixLoad.java`
+- Stress-tests `memory_graph.so` via JNA
+- Measures performance boundaries, RPS thresholds, and round-trip latency
+
+**Steps:**
+
+1. Clean & rebuild optimized C shared objects:
+```bash
 make clean && make all
-
-# 2. Compile the performance metric collector using the local JNA link paths
 ```
+
+2. Compile Java performance collector:
+```bash
 javac -cp .:lib/jna.jar src/BenchmarkMatrixLoad.java
 ```
-# 3. Fire the concurrent load testing matrix tool
-```
+
+3. Run concurrent load tester:
+```bash
 java -cp .:lib/jna.jar src.BenchmarkMatrixLoad
 ```
+
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
 ***
