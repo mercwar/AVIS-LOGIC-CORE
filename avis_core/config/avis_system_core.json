@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org",
+  "config_id": "AVIS_SYS_CONFIG_MAIN_2026",
+  "environment": {
+    "system_mode": "PRODUCTION",
+    "security_isolation_level": "HARDENED_SANDBOX",
+    "allocated_threads": 16,
+    "max_concurrent_llm_sessions": 64
+  },
+  "hardware_acceleration": {
+    "cuda_visible_devices": "0,1",
+    "native_c_memory_pool_mb": 4096,
+    "shared_object_preloading": true
+  },
+  "predictive_search_defaults": {
+    "max_web_scrape_depth": 3,
+    "default_relevance_threshold": 0.75,
+    "cache_ttl_seconds": 3600,
+    "authoritative_dns_whitelist": [
+      "ieee.org",
+      "w3.org",
+      "github.com",
+      "arxiv.org"
+    ]
+  }
+}
