@@ -548,6 +548,18 @@ java -cp out:lib/jna.jar AvisIntegrationBridge
         │
         ▼
   [ End User UI ]
+
+avis_core/
+└── templates/
+    ├── core_orchestration.avis             # Master runtime loop and system pipeline routing
+    ├── memory_vector_graph.avis            # Memory manager routing bindings
+    ├── symbolic_logic_engine.avis          # Logic solver processing boundaries
+    ├── recursive_refiner.avis              # Backtracking path rules
+    ├── code_sandbox_runtime.avis           # Security sandbox sandbox configuration
+    └── java/
+        ├── Avis2026Engine.java             # Main application runtime and .avis script interpreter
+        └── AvisProtocolStructure.java      # Model definition data structures and object mappers
+
 ```
 ##### 🌐 CYBERNETIC COGNITIVE ARCHITECTURE SIGN-OFF
 
