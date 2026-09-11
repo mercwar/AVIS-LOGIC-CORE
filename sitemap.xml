@@ -166,6 +166,54 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/setup_and_build.sh</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/fl.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/cyhy/EditorIntegration.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/cyhy/syntax_parser.php</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/cyhy/comments.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/manifest.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/AIBridge.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/bridge.c</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/universal_hook.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/bridge.js</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/tools/bridge.php</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/manifest.json</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/robot_directives.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/RobotValidator.java</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/universal_hook.fl</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/README.md</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/universal/v1/environment_state.fl</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/v1/config_matrix_builder.php</loc>
   </url>
   <url>
@@ -179,6 +227,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/v1/assembler.php</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/v1/index.html</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/logic/v1/templates/buffer_push.fl</loc>
@@ -260,6 +311,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/recursive_refiner/path_refiner.h</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/assets/css/style.css</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/.github/workflows/fire-site.yml</loc>
