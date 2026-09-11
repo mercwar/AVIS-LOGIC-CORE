@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org",
+  "template_id": "AVIS_PREDICTIVE_RELEVANCE_SCORING_V1",
+  "description": "Evaluates retrieved web items against cognitive task dependencies.",
+  "evaluation_matrix": {
+    "evaluated_result_indices":,
+    "scoring_metrics": {
+      "semantic_alignment_score": 0.942,
+      "trust_authority_rating": 0.880,
+      "temporal_freshness_weight": 0.950,
+      "composite_relevance_index": 0.924
+    },
+    "pruning_decision": {
+      "retain_for_user_delivery": true,
+      "rejection_reason_if_false": "N/A"
+    }
+  }
+}

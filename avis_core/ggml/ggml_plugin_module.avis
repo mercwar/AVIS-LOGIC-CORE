@@ -1,0 +1,16 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/ggml/ggml_plugin_module.avis
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-EXT-GGML-TENSOR"
+    BINARY_SOURCE  = "ggml/ggml_tensor_optimizer.so"
+    INTERFACE_BIND = "ggml.AvisGgmlInterface"
+
+[MATH_TUNING]
+    THREAD_CORES_ALLOCATED = 16
+    FP32_PRECISION_POOL   = TRUE
+
+[EOF]
+AVIS_PLUGIN_GGML_ACTIVE

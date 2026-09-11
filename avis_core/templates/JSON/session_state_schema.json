@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://avis.core",
+  "title": "AvisSessionStateSchema",
+  "description": "Manages session states, persistent system variables, and historical user choices.",
+  "type": "object",
+  "properties": {
+    "session_metadata": {
+      "type": "object",
+      "properties": {
+        "session_id": { "type": "string", "format": "uuid" },
+        "user_account_id": { "type": "string" },
+        "timestamp_initialized": { "type": "string", "format": "date-time" }
+      },
+      "required": ["session_id", "user_account_id", "timestamp_initialized"]
+    },
+    "active_state_variables": {
+      "type": "object",
+      "description": "Key-value pair store containing current operational configurations.",
+      "additionalProperties": { "type": "string" }
+    },
+    "historical_user_selections": {
+      "type": "array",
+      "description": "Audit path tracking past interactive button choices selected by the user.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time" },
+          "switch_context_ref": { "type": "string" },
+          "selected_option_index": { "type": "integer" }
+        },
+        "required": ["timestamp", "switch_context_ref", "selected_option_index"]
+      }
+    }
+  },
+  "required": ["session_metadata", "active_state_variables", "historical_user_selections"]
+}

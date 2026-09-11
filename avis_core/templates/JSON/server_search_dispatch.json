@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org",
+  "template_id": "AVIS_SERVER_SEARCH_DISPATCH_V1",
+  "description": "Direct server execution packet routing payload for index scraping engines.",
+  "execution_packet": {
+    "engine_routing_key": "web_search_crawler_node",
+    "search_parameters": {
+      "query_string": "Target search token stream",
+      "max_results_to_scrape": 10,
+      "safe_search_enforcement": true,
+      "region_locale": "en-US"
+    },
+    "network_sandbox_isolation": {
+      "proxy_rotation_required": true,
+      "max_timeout_ms": 3000
+    }
+  }
+}

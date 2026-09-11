@@ -1,0 +1,16 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/llm/llm_plugin_module.avis
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-EXT-LLM-CONTEXT"
+    BINARY_SOURCE  = "llm/llm_context_refresher.so"
+    INTERFACE_BIND = "llm.AvisLlmInterface"
+
+[CONTEXT_TUNING]
+    FLUSH_CACHE_ON_LOAD = TRUE
+    TARGET_WINDOW_SIZE  = 32768
+
+[EOF]
+AVIS_PLUGIN_LLM_ACTIVE

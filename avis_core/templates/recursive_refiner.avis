@@ -1,0 +1,18 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/templates/recursive_refiner.avis
+# DESCRIPTION: Backpropagation and Monte Carlo choice path parameters.
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-03-RECURSIVE-REFINER"
+    BINARY_SOURCE  = "bin/recursive_refiner/path_refiner.so"
+    INTERFACE_BIND = "AvisIntegrationBridge$PathRefinerLib"
+
+[RECURSION_LIMITS]
+    MAP_RESOURCE_MAP   = "bin/recursive_refiner/heuristic_map.res"
+    BACKTRACK_MAX_LOOPS = 1000
+    PRUNING_INDEX_ALPHA = TRUE
+
+[EOF]
+AVIS_MODULE_REFINER_LOADED

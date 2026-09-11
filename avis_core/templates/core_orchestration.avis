@@ -1,0 +1,24 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/templates/core_orchestration.avis
+# DESCRIPTION: Master pipeline control script driving user interaction layers.
+# ==========================================================================
+
+[SYSTEM_ORCHESTRATION]
+    VERSION_ID         = "2026.1.1"
+    SECURITY_PROFILE   = "ENFORCED_SANDBOX"
+    LOGGING_LEVEL      = "VERBOSITY_MAX"
+
+[INTERACTIVE_SWITCH_ROUTING]
+    MENU_SCHEMA        = "templates/json/conversation_switch_schema.json"
+    GUARDRAIL_SCHEMA   = "templates/json/input_guardrail_schema.json"
+    SESSION_DB_SCHEMA  = "templates/json/session_state_schema.json"
+
+[PIPELINE_FLOW_CHAIN]
+    STAGE_01 = "EXECUTE_GUARDRAIL_VAL"
+    STAGE_02 = "CHECK_AMBIGUITY_AND_RENDER_OPTIONS"
+    STAGE_03 = "BIND_NATIVE_APPLICATION_HARDWARE"
+    STAGE_04 = "COMPILE_PREDICTIVE_RESPONSE_BLOCKS"
+
+[EOF]
+AVIS_SYS_ORCHESTRATION_LOADED

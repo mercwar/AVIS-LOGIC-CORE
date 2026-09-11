@@ -1,0 +1,18 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/templates/memory_vector_graph.avis
+# DESCRIPTION: System configuration mappings for memory node registration.
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-01-MEMORY-VECTOR-GRAPH"
+    BINARY_SOURCE  = "bin/memory_vector_graph/memory_graph.so"
+    INTERFACE_BIND = "AvisIntegrationBridge$MemoryGraphLib"
+
+[ALGORITHM_TUNING]
+    DIMENSION_SIZE      = 1536
+    WEIGHT_RESOURCE_MAP = "bin/memory_vector_graph/schema_weights.res"
+    CACHE_PRELOAD_STATE = TRUE
+
+[EOF]
+AVIS_MODULE_MEMORY_LOADED

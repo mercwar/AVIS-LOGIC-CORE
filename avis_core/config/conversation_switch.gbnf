@@ -1,0 +1,20 @@
+# ==========================================================================
+# AVIS SYSTEM GRAMMAR COMPONENT
+# FILE: /avis_core/config/conversation_switch.gbnf
+# DESCRIPTION: Enforces strict structural syntax typing matching the AVIS
+#              interactive dialogue option selection parameters.
+# ==========================================================================
+
+root ::= json-object
+
+json-object ::= "{\n" "  \"switch_context_id\": " string ",\n" "  \"trigger_condition\": " trigger-enum ",\n" "  \"display_prompt_text\": " string ",\n" "  \"interactive_options\": " options-array ",\n" "  \"allow_custom_user_override\": " boolean "\n}"
+
+trigger-enum ::= "\"AMBIGUOUS_QUERY\"" | "\"RESOURCE_CONFLICT\"" | "\"CONFIRMATION_REQUIRED\"" | "\"STRATEGY_SELECTION\""
+
+options-array ::= "[\n" (option-item (",\n" option-item)*)? "\n  ]"
+
+option-item ::= "    {\n" "      \"option_index\": " integer ",\n" "      \"button_label\": " string ",\n" "      \"target_intent_branch\": " string "\n    }"
+
+string ::= "\"" [^"\\]* "\""
+integer ::= [0-9]+
+boolean ::= "true" | "false"

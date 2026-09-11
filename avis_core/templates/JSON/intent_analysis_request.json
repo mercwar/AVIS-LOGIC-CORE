@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org",
+  "template_id": "AVIS_INTENT_ANALYSIS_REQ_V1",
+  "description": "Calculates semantic intent boundaries and builds search queries from raw user input.",
+  "payload": {
+    "raw_user_prompt": "String string representation of raw input",
+    "cognitive_evaluation": {
+      "explicit_intent": "Core request explicitly stated by the user",
+      "latent_needs": [
+        "Unstated technical, dependency, or structural prerequisites implied by prompt"
+      ],
+      "estimated_iq_complexity_tier": "INTEGER [1 to 5]"
+    },
+    "search_strategy": {
+      "primary_search_query": "Optimized, punctuation-free token keyword search string",
+      "fallback_queries": [
+        "Alternative search string alpha",
+        "Alternative search string beta"
+      ],
+      "temporal_constraint": "e.g., current_year, past_24_hours, unrestricted",
+      "required_domain_authority_whitelist": [
+        "Target technical documentation roots or API resource bases"
+      ]
+    }
+  }
+}

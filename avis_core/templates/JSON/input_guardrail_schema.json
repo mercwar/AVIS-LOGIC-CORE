@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org",
+  "$id": "https://avis.core",
+  "title": "AvisInputGuardrailSchema",
+  "description": "Enforces boundary limits on data variables before compiling or routing down to native code layers.",
+  "type": "object",
+  "properties": {
+    "variable_name": { "type": "string" },
+    "data_type_class": {
+      "type": "string",
+      "enum": ["INTEGER_32", "FLOAT_32", "STRING_UTF8", "VECTOR_ARRAY"]
+    },
+    "boundary_constraints": {
+      "type": "object",
+      "properties": {
+        "numeric_minimum": { "type": "number" },
+        "numeric_maximum": { "type": "number" },
+        "string_max_length_bytes": { "type": "integer" },
+        "disallowed_character_regex": { "type": "string" }
+      }
+    },
+    "failed_validation_action": {
+      "type": "string",
+      "enum": ["PROMPT_RETRY_OPTIONS", "ABORT_TRANSACTION"],
+      "description": "Forces the system to fallback to an explicit option switch if bounds are broken."
+    }
+  },
+  "required": ["variable_name", "data_type_class", "boundary_constraints", "failed_validation_action"]
+}

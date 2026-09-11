@@ -1,0 +1,20 @@
+{
+  "app_id": "AV-02-SYMBOLIC-LOGIC-ENGINE",
+  "version": "2.1.0",
+  "entry_points": {
+    "native_binary": "bin/symbolic_logic_engine/logic_solver.so",
+    "java_binding_class": "AvisIntegrationBridge$LogicSolverLib"
+  },
+  "compiler_directives": {
+    "optimization_flag": "-O3",
+    "strict_grammar_checking": true,
+    "proof_trace_logging": true
+  },
+  "resources": {
+    "syntax_template": "bin/symbolic_logic_engine/grammar_rules.res",
+    "max_expression_tree_depth": 512
+  },
+  "permissions": [
+    "EXECUTE_ISOLATED_LOGIC"
+  ]
+}

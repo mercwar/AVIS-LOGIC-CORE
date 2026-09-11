@@ -1,0 +1,18 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/templates/symbolic_logic_engine.avis
+# DESCRIPTION: Directives driving abstract mathematical verification tree layers.
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-02-SYMBOLIC-LOGIC-ENGINE"
+    BINARY_SOURCE  = "bin/symbolic_logic_engine/logic_solver.so"
+    INTERFACE_BIND = "AvisIntegrationBridge$LogicSolverLib"
+
+[GRAMMAR_CONSTRAINTS]
+    RULES_RESOURCE_MAP = "bin/symbolic_logic_engine/grammar_rules.res"
+    MAX_DEPTH_LIMIT    = 512
+    TRACE_LOGGING      = TRUE
+
+[EOF]
+AVIS_MODULE_LOGIC_LOADED

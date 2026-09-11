@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 # IDENTITY: VERSION 3.8 // FIRE-SITE // CVBGOD
 # ROLE: Dynamic Sitemap Generation with URL Encoding for Version 1 Spaces.
 

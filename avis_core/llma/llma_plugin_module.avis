@@ -1,0 +1,16 @@
+AVIS2026
+# ==========================================================================
+# FILE: /avis_core/llma/llma_plugin_module.avis
+# ==========================================================================
+
+[MODULE_DESCRIPTOR]
+    TARGET_APP_ID  = "AV-EXT-LLMA-ROUTER"
+    BINARY_SOURCE  = "llma/llma_path_validator.so"
+    INTERFACE_BIND = "llma.AvisLlmaInterface"
+
+[ROUTE_TUNING]
+    MAX_DEPTH_HORIZON   = 128
+    BACKTRACK_THRESHOLD = 0.72
+
+[EOF]
+AVIS_PLUGIN_LLMA_ACTIVE

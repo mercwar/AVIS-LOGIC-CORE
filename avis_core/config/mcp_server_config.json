@@ -1,0 +1,31 @@
+{
+  "mcp_version": "1.0.0",
+  "server_identity": {
+    "name": "AVIS_CORE_BRIDGE_SERVER",
+    "vendor": "MERCWAR_ECOSYSTEM_LABS"
+  },
+  "tool_definitions": [
+    {
+      "name": "query_vector_memory",
+      "description": "Searches the associative graph structure for contextual technical nodes.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "vector_stream": { "type": "array", "items": { "type": "number" }, "minItems": 1536, "maxItems": 1536 }
+        },
+        "required": ["vector_stream"]
+      }
+    },
+    {
+      "name": "validate_proof_sequence",
+      "description": "Offloads abstract code strings to the native deterministic validation tree.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "expression_string": { "type": "string" }
+        },
+        "required": ["expression_string"]
+      }
+    }
+  ]
+}
