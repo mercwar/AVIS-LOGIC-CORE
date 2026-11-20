@@ -256,6 +256,9 @@
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/images/image_d7e38750.png</loc>
   </url>
   <url>
+    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/.gitmodules</loc>
+  </url>
+  <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/fl.html</loc>
   </url>
   <url>
@@ -272,9 +275,6 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/fire-site.sh</loc>
-  </url>
-  <url>
-    <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/AVIS-DATALAKE.md</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/AVIS-LOGIC-CORE/blob/main/bin/code_sandbox_runtime/sandbox_policy.res</loc>
